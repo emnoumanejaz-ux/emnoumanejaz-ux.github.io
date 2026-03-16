@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IlmAurHunar.pk — Pakistan Ka #1 Free Test Platform</title>
+<meta name="description" content="Pakistan ka best free online test platform. FPSC NTS PPSC ETEA CSS MCQs typing master interview tips presentation tips.">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#020408;--s1:#060d16;--s2:#0a1628;--s3:#0f1f35;
+--b1:#1a2d4a;--b2:#243d60;
+--green:#00ff88;--g2:#00cc66;--gd:rgba(0,255,136,0.07);--gd2:rgba(0,255,136,0.12);
+--cyan:#00d4ff;--cd:rgba(0,212,255,0.07);
+--gold:#ffcc00;--yd:rgba(255,204,0,0.07);
+--red:#ff2d55;--rd:rgba(255,45,85,0.07);
+--blue:#0066ff;--bd:rgba(0,102,255,0.07);
+--purple:#aa44ff;--pd:rgba(170,68,255,0.07);
+--orange:#ff6600;--od:rgba(255,102,0,0.07);
+--t1:#e8f4ff;--t2:#7a9fc0;--t3:#3a5570;
+--sw:270px;--hh:62px;
+--r16:16px;--r12:12px;--r8:8px;
+}
+.light{
+--bg:#f0f6ff;--s1:#ffffff;--s2:#e4eeff;--s3:#d8e8ff;
+--b1:#b0c8e8;--b2:#90b0d8;
+--t1:#020408;--t2:#344860;--t3:#6888a0;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'Exo 2',sans-serif;background:var(--bg);color:var(--t1);min-height:100vh;overflow-x:hidden;transition:background .4s,color .4s}
+
+/* FUTURISTIC SCAN LINE */
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,212,255,0.01) 2px,rgba(0,212,255,0.01) 4px);pointer-events:none;z-index:9999;animation:scan 8s linear infinite}
+@keyframes scan{0%{background-position:0 0}100%{background-position:0 100px}}
+
+/* ANIMATED BG */
+.bg-fx{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:40px 40px;animation:gridMove 20s linear infinite}
+@keyframes gridMove{0%{background-position:0 0}100%{background-position:40px 40px}}
+.bg-orb{position:absolute;border-radius:50%;filter:blur(80px);animation:orbFloat 12s ease-in-out infinite alternate}
+.orb1{width:700px;height:700px;background:radial-gradient(circle,rgba(0,255,136,0.06) 0%,transparent 70%);top:-200px;right:-200px;animation-duration:14s}
+.orb2{width:500px;height:500px;background:radial-gradient(circle,rgba(0,212,255,0.05) 0%,transparent 70%);bottom:-150px;left:-100px;animation-duration:18s;animation-direction:alternate-reverse}
+.orb3{width:300px;height:300px;background:radial-gradient(circle,rgba(170,68,255,0.05) 0%,transparent 70%);top:40%;left:35%;animation-duration:22s}
+@keyframes orbFloat{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-50px,50px) scale(1.15)}}
+
+/* HEX PARTICLES */
+.hex-particles{position:absolute;inset:0;overflow:hidden}
+.hex{position:absolute;opacity:0;animation:hexFloat 6s ease-in-out infinite;font-size:12px;color:rgba(0,212,255,0.15)}
+@keyframes hexFloat{0%{opacity:0;transform:translateY(0) rotate(0deg)}20%{opacity:1}80%{opacity:1}100%{opacity:0;transform:translateY(-200px) rotate(180deg)}}
+
+/* LAYOUT */
+.layout{display:flex;min-height:100vh;position:relative;z-index:1}
+
+/* SIDEBAR */
+.sidebar{width:var(--sw);background:rgba(6,13,22,0.97);backdrop-filter:blur(30px);border-right:1px solid var(--b1);position:fixed;top:0;left:0;height:100vh;display:flex;flex-direction:column;z-index:200;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.light .sidebar{background:rgba(255,255,255,0.97)}
+
+/* LOGO */
+.sb-logo{padding:22px 20px 18px;border-bottom:1px solid var(--b1);position:relative;overflow:hidden}
+.sb-logo::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation:logoLine 3s ease-in-out infinite}
+@keyframes logoLine{0%,100%{opacity:.3}50%{opacity:1}}
+.logo-mark{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;line-height:1.1;letter-spacing:2px}
+.lm-i{color:var(--green);text-shadow:0 0 20px rgba(0,255,136,0.5)}
+.lm-a{color:var(--t2)}
+.lm-h{color:var(--cyan);text-shadow:0 0 20px rgba(0,212,255,0.5)}
+.lm-p{color:var(--gold);font-size:.75rem;text-shadow:0 0 15px rgba(255,204,0,0.4)}
+.logo-tag{font-size:9px;color:var(--t3);letter-spacing:2px;text-transform:uppercase;margin-top:5px;font-family:'Share Tech Mono',monospace}
+.logo-status{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:9px;color:var(--green);font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.status-dot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:pulse2 2s infinite;box-shadow:0 0 8px var(--green)}
+@keyframes pulse2{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.6)}}
+
+/* LANG SWITCH */
+.lang-switch{display:flex;gap:4px;padding:12px 16px;border-bottom:1px solid var(--b1)}
+.lang-btn{flex:1;padding:6px 10px;border-radius:6px;border:1px solid var(--b1);background:transparent;color:var(--t3);font-size:11px;font-weight:700;cursor:pointer;font-family:'Exo 2',sans-serif;transition:all .2s;text-align:center;letter-spacing:1px}
+.lang-btn.active{background:var(--gd2);border-color:var(--green);color:var(--green);text-shadow:0 0 10px rgba(0,255,136,0.5);box-shadow:0 0 10px rgba(0,255,136,0.1)}
+
+/* NAV */
+.sb-nav{flex:1;padding:8px 10px;overflow-y:auto}
+.sb-nav::-webkit-scrollbar{width:3px}
+.sb-nav::-webkit-scrollbar-track{background:transparent}
+.sb-nav::-webkit-scrollbar-thumb{background:var(--b1);border-radius:2px}
+.nav-grp-label{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:2px;padding:8px 10px 3px;font-family:'Share Tech Mono',monospace}
+.ni{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:var(--r8);cursor:pointer;transition:all .25s;color:var(--t2);font-size:12px;font-weight:500;border:1px solid transparent;margin-bottom:2px;position:relative;overflow:hidden}
+.ni::after{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:0;height:60%;background:var(--green);border-radius:0 2px 2px 0;transition:width .2s;opacity:.6}
+.ni:hover{color:var(--t1);border-color:var(--b1);padding-left:16px}
+.ni:hover::after{width:3px}
+.ni.active{color:var(--green);border-color:rgba(0,255,136,0.25);background:var(--gd);text-shadow:0 0 10px rgba(0,255,136,0.3)}
+.ni.active::after{width:3px}
+.ni .ni-ic{font-size:.95rem;width:20px;text-align:center;flex-shrink:0}
+.ni-bdg{font-size:8px;background:var(--green);color:#000;padding:1px 6px;border-radius:10px;font-weight:800;margin-left:auto;font-family:'Share Tech Mono',monospace}
+.ni-bdg-c{background:var(--cyan);color:#000}
+.ni-bdg-p{background:var(--purple);color:#fff}
+
+/* THEME & FOOTER */
+.sb-footer{padding:12px 14px;border-top:1px solid var(--b1)}
+.theme-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:var(--r8);cursor:pointer;background:var(--s2);border:1px solid var(--b1);margin-bottom:10px;transition:all .2s}
+.theme-row:hover{border-color:var(--gold)}
+.tt-sw{width:34px;height:18px;background:var(--b1);border-radius:9px;margin-left:auto;position:relative;transition:background .3s}
+.tt-sw.on{background:var(--gold)}
+.tt-sw::after{content:'';position:absolute;width:14px;height:14px;border-radius:50%;background:white;top:2px;left:2px;transition:transform .3s;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.tt-sw.on::after{transform:translateX(16px)}
+.sb-footer-txt{font-size:9px;color:var(--t3);line-height:1.8;font-family:'Share Tech Mono',monospace}
+.sb-footer-txt strong{color:var(--green)}
+
+/* OVERLAY & MOBILE */
+.sb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:150;backdrop-filter:blur(4px)}
+.menu-btn{display:none;position:fixed;top:12px;left:12px;z-index:300;background:var(--s1);border:1px solid var(--b1);border-radius:var(--r8);width:40px;height:40px;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:all .2s;box-shadow:0 0 15px rgba(0,212,255,0.1)}
+.menu-btn:hover{border-color:var(--cyan);box-shadow:0 0 20px rgba(0,212,255,0.2)}
+
+/* MAIN */
+.main{margin-left:var(--sw);flex:1;display:flex;flex-direction:column;min-height:100vh}
+
+/* TOPBAR */
+.topbar{background:rgba(2,4,8,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--b1);padding:0 24px;height:var(--hh);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;transition:background .4s}
+.topbar::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),var(--green),transparent);animation:topLine 4s ease-in-out infinite}
+@keyframes topLine{0%,100%{opacity:.2}50%{opacity:.8}}
+.light .topbar{background:rgba(240,246,255,0.95)}
+.tb-title{font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:1px;color:var(--cyan);text-shadow:0 0 15px rgba(0,212,255,0.4)}
+.tb-right{display:flex;align-items:center;gap:10px}
+.streak-chip{display:flex;align-items:center;gap:6px;background:var(--yd);border:1px solid rgba(255,204,0,0.3);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;color:var(--gold);font-family:'Orbitron',sans-serif;letter-spacing:1px;box-shadow:0 0 10px rgba(255,204,0,0.1)}
+.user-chip{background:var(--s2);border:1px solid var(--b1);border-radius:20px;padding:4px 12px;font-size:11px;color:var(--t2);font-family:'Share Tech Mono',monospace}
+
+/* PAGES */
+.page{display:none;padding:24px;animation:pgIn .35s ease}
+.page.active{display:block}
+@keyframes pgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══ HERO ══ */
+.hero{background:linear-gradient(135deg,rgba(0,255,136,0.04),rgba(0,212,255,0.03),rgba(170,68,255,0.04));border:1px solid var(--b1);border-radius:var(--r16);padding:36px 40px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--green),var(--cyan),transparent);animation:heroLine 3s ease-in-out infinite}
+@keyframes heroLine{0%,100%{opacity:.4}50%{opacity:1}}
+.hero::after{content:'';position:absolute;bottom:0;right:0;width:300px;height:300px;background:radial-gradient(circle,rgba(0,255,136,0.04) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gd2);border:1px solid rgba(0,255,136,0.3);border-radius:20px;padding:5px 16px;font-size:10px;font-weight:700;color:var(--green);margin-bottom:18px;letter-spacing:2px;font-family:'Orbitron',monospace;text-transform:uppercase;box-shadow:0 0 15px rgba(0,255,136,0.1)}
+.hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:900;line-height:1.15;margin-bottom:12px;letter-spacing:1px}
+.hero h1 em{font-style:normal;color:var(--green);text-shadow:0 0 30px rgba(0,255,136,0.5)}
+.hero p{font-size:13px;color:var(--t2);max-width:520px;line-height:1.8;margin-bottom:22px}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap}
+.hs-n{font-family:'Orbitron',sans-serif;font-size:1.5rem;font-weight:800;color:var(--green);text-shadow:0 0 20px rgba(0,255,136,0.4)}
+.hs-l{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:2px;font-family:'Share Tech Mono',monospace}
+.hero-corner{position:absolute;right:40px;top:50%;transform:translateY(-50%);font-size:4rem;opacity:.07;filter:blur(1px);font-family:'Orbitron',sans-serif;font-weight:900;color:var(--green);pointer-events:none;animation:cornerAnim 4s ease-in-out infinite alternate}
+@keyframes cornerAnim{0%{opacity:.05;transform:translateY(-50%) scale(1)}100%{opacity:.12;transform:translateY(-55%) scale(1.05)}}
+
+/* SECTION TITLE */
+.sec-title{font-family:'Orbitron',sans-serif;font-size:.8rem;font-weight:700;color:var(--cyan);margin-bottom:14px;display:flex;align-items:center;gap:10px;letter-spacing:2px;text-transform:uppercase;text-shadow:0 0 15px rgba(0,212,255,0.3)}
+.sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--b1),transparent)}
+
+/* GRIDS */
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+
+/* EXAM CARDS */
+.ec{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:18px 14px;text-align:center;cursor:pointer;transition:all .25s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
+.ec::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gd),transparent);opacity:0;transition:opacity .25s}
+.ec::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:0;transition:opacity .25s}
+.ec:hover{transform:translateY(-5px) scale(1.03);border-color:var(--green);box-shadow:0 15px 40px rgba(0,255,136,0.12),0 0 20px rgba(0,255,136,0.05)}
+.ec:hover::before{opacity:1}
+.ec:hover::after{opacity:1}
+.ec.sel{border-color:var(--green);background:var(--gd);box-shadow:0 0 20px rgba(0,255,136,0.1)}
+.ec.sel::after{opacity:1}
+.ec-em{font-size:1.7rem;margin-bottom:8px;display:block;transition:transform .25s}
+.ec:hover .ec-em{transform:scale(1.2) rotate(5deg)}
+.ec-n{font-family:'Orbitron',sans-serif;font-size:.8rem;font-weight:700;margin-bottom:2px;letter-spacing:1px}
+.ec-s{font-size:9px;color:var(--t3);font-family:'Share Tech Mono',monospace}
+
+/* SUBJECT CARDS */
+.sc{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r8);padding:10px 12px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:9px;position:relative;overflow:hidden}
+.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--cyan);transform:scaleX(0);transition:transform .2s;transform-origin:left}
+.sc:hover{border-color:var(--cyan);background:var(--cd);transform:translateX(3px)}
+.sc:hover::after{transform:scaleX(1)}
+.sc.sel{border-color:var(--cyan);background:var(--cd)}
+.sc.sel::after{transform:scaleX(1)}
+.sc-n{font-size:12px;font-weight:600;color:var(--t2);transition:color .2s}
+.sc:hover .sc-n,.sc.sel .sc-n{color:var(--cyan)}
+
+/* CONFIG */
+.cfg3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.cfg-box{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:16px;position:relative;overflow:hidden;transition:border-color .2s}
+.cfg-box:hover{border-color:var(--b2)}
+.cfg-box label{display:block;font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;font-family:'Share Tech Mono',monospace}
+.cfg-box select,.cfg-box input[type=range]{width:100%;background:var(--s2);border:1px solid var(--b1);border-radius:6px;padding:8px 10px;color:var(--t1);font-family:'Exo 2',sans-serif;font-size:12px;cursor:pointer;outline:none;transition:border-color .2s}
+.cfg-box select:focus,.cfg-box input[type=range]:focus{border-color:var(--green)}
+.rv{font-family:'Orbitron',monospace;font-size:1.1rem;color:var(--green);font-weight:700;margin-top:8px;text-align:center;text-shadow:0 0 15px rgba(0,255,136,0.4)}
+
+/* BUTTONS */
+.btn-g{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;background:transparent;color:var(--green);border:1px solid var(--green);border-radius:var(--r8);font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;transition:all .25s;position:relative;overflow:hidden;letter-spacing:1px;text-shadow:0 0 10px rgba(0,255,136,0.4);box-shadow:0 0 15px rgba(0,255,136,0.1)}
+.btn-g::before{content:'';position:absolute;inset:0;background:var(--green);opacity:0;transition:opacity .25s}
+.btn-g::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent);transform:translateX(-100%);transition:transform .4s}
+.btn-g:hover{box-shadow:0 0 30px rgba(0,255,136,0.3),0 0 60px rgba(0,255,136,0.1);transform:translateY(-2px)}
+.btn-g:hover::before{opacity:.15}
+.btn-g:hover::after{transform:translateX(100%)}
+.btn-g:active{transform:translateY(0)}
+.btn-c{border-color:var(--cyan);color:var(--cyan);text-shadow:0 0 10px rgba(0,212,255,0.4);box-shadow:0 0 15px rgba(0,212,255,0.1)}
+.btn-c:hover{box-shadow:0 0 30px rgba(0,212,255,0.3);color:var(--cyan)}
+.btn-c:hover::before{background:var(--cyan)}
+.btn-o{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;background:transparent;border:1px solid var(--b2);border-radius:var(--r8);color:var(--t2);font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;font-family:'Exo 2',sans-serif}
+.btn-o:hover{border-color:var(--green);color:var(--green);background:var(--gd)}
+.btn-full{width:100%;font-size:.9rem;padding:15px}
+
+/* CARDS GENERIC */
+.glass-card{background:rgba(6,13,22,0.8);border:1px solid var(--b1);border-radius:var(--r16);padding:20px;position:relative;overflow:hidden;backdrop-filter:blur(10px)}
+.light .glass-card{background:rgba(255,255,255,0.8)}
+.glass-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.4}
+
+/* QUIZ */
+.quiz-layout{display:grid;grid-template-columns:1fr 280px;gap:18px;align-items:start}
+.qtop{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:14px 20px;margin-bottom:16px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;position:relative;overflow:hidden}
+.qtop::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent);animation:topLine 3s infinite}
+.qt-l,.qt-r{display:flex;gap:16px}
+.qt-r{justify-content:flex-end}
+.qt-i{text-align:center}
+.qt-n{font-family:'Orbitron',monospace;font-size:.95rem;font-weight:700}
+.qt-l2{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;margin-top:2px;font-family:'Share Tech Mono',monospace}
+.timer-w{display:flex;flex-direction:column;align-items:center}
+.t-ring{position:relative;width:60px;height:60px}
+.t-ring svg{transform:rotate(-90deg)}
+.t-rbg{fill:none;stroke:var(--b1);stroke-width:5}
+.t-rfill{fill:none;stroke:var(--green);stroke-width:5;stroke-linecap:round;stroke-dasharray:157;stroke-dashoffset:0;transition:stroke-dashoffset 1s linear,stroke .5s;filter:drop-shadow(0 0 4px var(--green))}
+.t-val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:13px;font-weight:700;color:var(--green);text-shadow:0 0 10px rgba(0,255,136,0.5)}
+.prog-bar{background:var(--s2);height:4px;border-radius:2px;margin-bottom:16px;overflow:hidden;border:1px solid var(--b1)}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));border-radius:2px;transition:width .4s ease;box-shadow:0 0 8px rgba(0,255,136,0.4)}
+.q-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);padding:26px;margin-bottom:14px;position:relative;overflow:hidden;transition:border-color .3s}
+.q-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.3}
+.q-meta{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.q-bdg{font-size:9px;font-weight:700;padding:2px 9px;border-radius:20px;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.qb-n{background:var(--bd);border:1px solid rgba(0,102,255,.25);color:#6699ff}
+.qb-s{background:var(--s2);border:1px solid var(--b1);color:var(--t3)}
+.q-txt{font-size:1rem;line-height:1.7;color:var(--t1);font-weight:500;margin-bottom:20px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.opt{padding:12px 14px;border:1px solid var(--b1);border-radius:var(--r8);font-size:13px;cursor:pointer;color:var(--t2);background:var(--s2);text-align:left;transition:all .2s;font-family:'Exo 2',sans-serif;line-height:1.4;display:flex;align-items:flex-start;gap:9px;width:100%;position:relative;overflow:hidden}
+.opt::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--cyan);transform:scaleX(0);transition:transform .2s;transform-origin:left}
+.opt-l{min-width:24px;height:24px;border-radius:50%;border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;transition:all .2s;margin-top:1px;font-family:'Orbitron',monospace}
+.opt:hover:not(:disabled){border-color:var(--cyan);background:var(--cd);color:var(--t1)}
+.opt:hover:not(:disabled)::before{transform:scaleX(1)}
+.opt:hover:not(:disabled) .opt-l{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 8px rgba(0,212,255,.3)}
+.opt.correct{border-color:var(--green);background:var(--gd);color:var(--green)}
+.opt.correct .opt-l{border-color:var(--green);background:var(--green);color:#000;box-shadow:0 0 10px rgba(0,255,136,.4)}
+.opt.wrong{border-color:var(--red);background:var(--rd);color:var(--red)}
+.opt.wrong .opt-l{border-color:var(--red);background:var(--red);color:#fff}
+.opt.reveal{border-color:var(--green);background:var(--gd);color:var(--green)}
+.opt.reveal .opt-l{border-color:var(--green);background:var(--green);color:#000}
+.opt:disabled{cursor:default}
+.expl{display:none;margin-top:12px;background:var(--s2);border:1px solid rgba(255,204,0,.2);border-radius:var(--r8);padding:12px 16px;font-size:12px;line-height:1.7;color:var(--t2)}
+.expl.show{display:block}
+.expl-lbl{font-size:9px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:5px;font-family:'Share Tech Mono',monospace}
+.q-nav{display:flex;align-items:center;justify-content:space-between}
+.skip-btn{background:none;border:none;font-size:11px;color:var(--t3);cursor:pointer;font-family:'Share Tech Mono',monospace;transition:color .2s;padding:3px;letter-spacing:1px}
+.skip-btn:hover{color:var(--gold)}
+
+/* QP PANEL */
+.qp-panel{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:18px;position:sticky;top:calc(var(--hh)+18px)}
+.qp-title{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;font-family:'Share Tech Mono',monospace}
+.qp-dots{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:14px}
+.qpd{width:30px;height:30px;border-radius:6px;border:1px solid var(--b1);background:var(--s2);font-size:9px;font-weight:700;color:var(--t3);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;font-family:'Orbitron',monospace}
+.qpd:hover{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 8px rgba(0,212,255,.2)}
+.qpd.cur{border-color:var(--cyan);color:var(--cyan);background:var(--cd);box-shadow:0 0 10px rgba(0,212,255,.2)}
+.qpd.ac{border-color:var(--green);background:var(--gd);color:var(--green)}
+.qpd.aw{border-color:var(--red);background:var(--rd);color:var(--red)}
+.qpd.sk{border-color:var(--gold);background:var(--yd);color:var(--gold)}
+.qp-leg{display:flex;flex-direction:column;gap:5px}
+.qpl{display:flex;align-items:center;gap:7px;font-size:10px;color:var(--t2)}
+.qpl-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+
+/* RESULT */
+.res-layout{display:grid;grid-template-columns:360px 1fr;gap:20px;align-items:start}
+.res-l{position:sticky;top:calc(var(--hh)+18px)}
+.res-ring-box{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);padding:28px;text-align:center;margin-bottom:14px;position:relative;overflow:hidden}
+.res-ring-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent)}
+.rr-wrap{position:relative;width:150px;height:150px;margin:0 auto 14px}
+.rr-wrap svg{transform:rotate(-90deg)}
+.rr-bg{fill:none;stroke:var(--s2);stroke-width:10}
+.rr-fill{fill:none;stroke-width:10;stroke-linecap:round;stroke-dasharray:408;stroke-dashoffset:408;transition:stroke-dashoffset 1.5s ease;filter:drop-shadow(0 0 6px currentColor)}
+.rr-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.rr-pct{font-family:'Orbitron',sans-serif;font-size:2rem;font-weight:900;text-shadow:0 0 20px rgba(0,255,136,.4)}
+.rr-lbl{font-size:9px;color:var(--t3);margin-top:2px;font-family:'Share Tech Mono',monospace;letter-spacing:2px}
+.res-grade{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:800;margin-bottom:5px;letter-spacing:1px}
+.res-msg{font-size:12px;color:var(--t2);line-height:1.6}
+.res-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:14px}
+.rs-c{background:var(--s2);border-radius:var(--r8);padding:13px;text-align:center;border:1px solid var(--b1);transition:border-color .2s}
+.rs-c:hover{border-color:var(--b2)}
+.rs-n{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:2px}
+.rs-l{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:1px;font-family:'Share Tech Mono',monospace}
+.nc{color:var(--green);text-shadow:0 0 10px rgba(0,255,136,.3)}
+.nw{color:var(--red)}.ny{color:var(--gold)}.nb{color:var(--cyan)}
+.rev-box{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);overflow:hidden;margin-bottom:14px}
+.rev-hdr{padding:14px 18px;border-bottom:1px solid var(--b1);font-family:'Orbitron',sans-serif;font-size:.75rem;font-weight:700;display:flex;justify-content:space-between;align-items:center;letter-spacing:1px}
+.rev-item{padding:12px 18px;border-bottom:1px solid var(--b1);display:flex;align-items:flex-start;gap:10px}
+.rev-item:last-child{border-bottom:none}
+.ri-ic{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;margin-top:2px}
+.ric{background:var(--gd);color:var(--green)}.riw{background:var(--rd);color:var(--red)}.ris{background:var(--yd);color:var(--gold)}
+.ri-q{font-size:12px;color:var(--t1);line-height:1.5;margin-bottom:3px}
+.ri-a{font-size:11px;color:var(--t3)}
+.ri-a .ca{color:var(--green);font-weight:600}
+.act-row{display:flex;gap:9px;flex-wrap:wrap}
+
+/* LB */
+.lb-layout{display:grid;grid-template-columns:1fr 260px;gap:18px;align-items:start}
+.lb-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px}
+.lb-h-t{font-family:'Orbitron',sans-serif;font-size:1rem;font-weight:800;letter-spacing:2px;text-shadow:0 0 15px rgba(0,212,255,.3)}
+.lb-fils{display:flex;gap:5px}
+.lb-fb{padding:5px 13px;border-radius:20px;border:1px solid var(--b1);background:transparent;color:var(--t2);font-size:10px;font-weight:700;cursor:pointer;font-family:'Share Tech Mono',monospace;transition:all .2s;letter-spacing:1px}
+.lb-fb.active{background:var(--yd);border-color:rgba(255,204,0,.4);color:var(--gold);box-shadow:0 0 10px rgba(255,204,0,.1)}
+.lb-tbl{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);overflow:hidden}
+.lb-row{display:grid;grid-template-columns:48px 1fr 80px 65px 70px;align-items:center;padding:13px 18px;border-bottom:1px solid var(--b1);transition:background .15s}
+.lb-row:last-child{border-bottom:none}
+.lb-row:hover:not(.lb-hrow){background:var(--s2)}
+.lb-hrow{background:var(--s2);font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:1px;font-family:'Share Tech Mono',monospace}
+.lb-row.gr{background:rgba(255,204,0,.03)}.lb-row.sr{background:rgba(180,180,180,.02)}.lb-row.br{background:rgba(180,80,0,.02)}
+.lb-row.mer{background:rgba(0,255,136,.04);border-left:2px solid var(--green)}
+.lb-rk{font-family:'Orbitron',sans-serif;font-weight:800;font-size:.9rem}
+.r1{color:var(--gold);text-shadow:0 0 10px rgba(255,204,0,.4)}
+.r2{color:#aab8c8}.r3{color:#cd7f32}
+.lb-nm .lb-n{font-weight:600;font-size:13px}
+.lb-nm .lb-sub{font-size:10px;color:var(--t3);margin-top:1px;font-family:'Share Tech Mono',monospace}
+.lb-bar{margin-top:4px;height:3px;background:var(--s2);border-radius:2px;overflow:hidden}
+.lb-bar-f{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));border-radius:2px;box-shadow:0 0 4px var(--green)}
+.lb-pts,.lb-pct,.lb-tm{font-family:'Share Tech Mono',monospace;font-size:11px}
+.lb-pct{color:var(--green)}.lb-pts{color:var(--t2)}.lb-tm{color:var(--t3)}
+.lb-empty{text-align:center;padding:40px;color:var(--t3);font-family:'Share Tech Mono',monospace}
+.lb-side-c{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:18px;margin-bottom:14px;position:relative;overflow:hidden}
+.lb-side-c::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.3}
+.lbs-t{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;font-family:'Share Tech Mono',monospace}
+.t3-item{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--b1)}
+.t3-item:last-child{border-bottom:none}
+.t3-med{font-size:1.2rem;width:28px;text-align:center;flex-shrink:0}
+.t3-n{font-weight:600;font-size:12px}
+.t3-s{font-size:9px;color:var(--t3);margin-top:1px;font-family:'Share Tech Mono',monospace}
+.t3-pct{margin-left:auto;font-family:'Orbitron',monospace;font-size:11px;color:var(--green);font-weight:700;text-shadow:0 0 8px rgba(0,255,136,.3)}
+.my-stats{font-size:11px;color:var(--t2);line-height:2.2;font-family:'Share Tech Mono',monospace}
+.my-stats strong{color:var(--t1)}
+
+/* TYPING */
+.typing-layout{display:grid;grid-template-columns:1fr 260px;gap:18px;align-items:start}
+.t-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+.tsc{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r8);padding:14px;text-align:center;transition:all .2s;position:relative;overflow:hidden}
+.tsc::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:2px;transition:width .3s}
+.tsc:hover::after{width:80%}
+.tsc.wpm-c::after{background:var(--cyan)}.tsc.acc-c::after{background:var(--green)}.tsc.err-c::after{background:var(--red)}.tsc.time-c::after{background:var(--gold)}
+.tsc-n{font-family:'Orbitron',monospace;font-size:1.4rem;font-weight:700}
+.tsc-l{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:2px;margin-top:3px;font-family:'Share Tech Mono',monospace}
+.wpm-c .tsc-n{color:var(--cyan);text-shadow:0 0 15px rgba(0,212,255,.4)}
+.acc-c .tsc-n{color:var(--green);text-shadow:0 0 15px rgba(0,255,136,.4)}
+.err-c .tsc-n{color:var(--red)}.time-c .tsc-n{color:var(--gold);text-shadow:0 0 15px rgba(255,204,0,.4)}
+.timer-sel{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.ts-lbl{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:2px;font-family:'Share Tech Mono',monospace;white-space:nowrap}
+.ts-pill{padding:6px 14px;border-radius:20px;border:1px solid var(--b1);background:transparent;color:var(--t3);font-size:10px;font-weight:700;cursor:pointer;font-family:'Share Tech Mono',monospace;transition:all .2s;letter-spacing:1px}
+.ts-pill:hover{border-color:var(--green);color:var(--green)}
+.ts-pill.at{border-color:var(--green);color:var(--green);background:var(--gd);box-shadow:0 0 8px rgba(0,255,136,.15)}
+.cat-row{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.cat-pill{padding:5px 12px;border-radius:20px;border:1px solid var(--b1);background:transparent;color:var(--t3);font-size:10px;font-weight:700;cursor:pointer;font-family:'Share Tech Mono',monospace;transition:all .2s;letter-spacing:1px}
+.cat-pill:hover,.cat-pill.ac2{border-color:var(--cyan);color:var(--cyan);background:var(--cd)}
+.typing-prog{margin-bottom:10px}
+.tp-bar{background:var(--s2);height:3px;border-radius:2px;overflow:hidden;border:1px solid var(--b1)}
+.tp-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--cyan));border-radius:2px;transition:width .1s;box-shadow:0 0 6px rgba(0,255,136,.4)}
+.tp-lbl{font-size:9px;color:var(--t3);text-align:right;margin-top:3px;font-family:'Share Tech Mono',monospace}
+.type-box{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);padding:26px 30px;margin-bottom:12px;font-family:'Share Tech Mono',monospace;font-size:1.05rem;line-height:1.9;min-height:90px;transition:border-color .3s;position:relative;overflow:hidden}
+.type-box::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0;transition:opacity .3s}
+.type-box.active{border-color:var(--cyan)}
+.type-box.active::before{opacity:.6}
+.tc{transition:color .08s}
+.tc-ok{color:var(--green)}.tc-bad{color:var(--red);text-decoration:underline wavy var(--red)}.tc-cur{color:#000;background:var(--cyan);border-radius:2px;animation:blink 1s steps(1) infinite;box-shadow:0 0 8px var(--cyan)}.tc-wait{color:var(--t3)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.1}}
+.type-input{width:100%;background:var(--s2);border:1px solid var(--b1);border-radius:var(--r8);padding:13px 16px;color:var(--t1);font-family:'Share Tech Mono',monospace;font-size:.95rem;outline:none;transition:all .2s;margin-bottom:12px;letter-spacing:1px}
+.type-input:focus{border-color:var(--cyan);box-shadow:0 0 15px rgba(0,212,255,.08)}
+.type-input:disabled{opacity:.3;cursor:not-allowed}
+.type-result-popup{display:none;background:linear-gradient(135deg,var(--gd2),var(--cd));border:1px solid rgba(0,255,136,.3);border-radius:var(--r12);padding:20px;margin-bottom:12px;text-align:center;position:relative;overflow:hidden}
+.type-result-popup::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent)}
+.type-result-popup.show{display:block;animation:pgIn .4s ease}
+.trp-wpm{font-family:'Orbitron',sans-serif;font-size:2.5rem;font-weight:900;color:var(--green);text-shadow:0 0 30px rgba(0,255,136,.5)}
+.trp-lbl{font-size:10px;color:var(--t2);margin-bottom:12px;font-family:'Share Tech Mono',monospace;letter-spacing:2px}
+.trp-stats{display:flex;justify-content:center;gap:24px}
+.trp-s-n{font-family:'Orbitron',monospace;font-size:1.1rem;font-weight:700}
+.trp-s-l{font-size:9px;color:var(--t3);font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.type-btn-row{display:flex;gap:9px}
+.t-btn{padding:9px 20px;border-radius:var(--r8);border:1px solid var(--b1);background:var(--s2);color:var(--t2);font-size:11px;font-weight:700;cursor:pointer;transition:all .2s;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.t-btn:hover{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 10px rgba(0,212,255,.1)}
+.t-btn.go{border-color:var(--green);color:var(--green);box-shadow:0 0 10px rgba(0,255,136,.15)}
+.t-btn.go:hover{background:var(--gd2);transform:translateY(-1px);box-shadow:0 0 20px rgba(0,255,136,.2)}
+.wpm-chart-box{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:18px;margin-bottom:14px}
+.wcb-t{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;font-family:'Share Tech Mono',monospace}
+.wpm-bars{display:flex;align-items:flex-end;gap:3px;height:70px}
+.wpm-b{flex:1;background:var(--green);border-radius:2px 2px 0 0;min-height:3px;opacity:.4;transition:height .3s;box-shadow:0 0 4px rgba(0,255,136,.2)}
+.wpm-b:last-child{opacity:1;box-shadow:0 0 8px rgba(0,255,136,.4)}
+
+/* TIPS CARDS */
+.tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.tip-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);padding:20px;position:relative;overflow:hidden;cursor:pointer;transition:all .25s}
+.tip-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;transition:opacity .25s;opacity:.5}
+.tip-card:hover{transform:translateY(-4px);border-color:var(--b2);box-shadow:0 15px 40px rgba(0,0,0,.2)}
+.tip-card:hover::before{opacity:1}
+.tc-int::before{background:linear-gradient(90deg,var(--cyan),var(--purple))}
+.tc-prs::before{background:linear-gradient(90deg,var(--gold),var(--orange))}
+.tc-imp::before{background:linear-gradient(90deg,var(--green),var(--cyan))}
+.tc-tks::before{background:linear-gradient(90deg,var(--purple),var(--red))}
+.tip-card-icon{font-size:2rem;margin-bottom:12px;display:block}
+.tip-card-title{font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:800;margin-bottom:6px;letter-spacing:1px}
+.tip-card-sub{font-size:12px;color:var(--t2);line-height:1.6}
+.tip-card-count{position:absolute;top:14px;right:14px;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--t3);border:1px solid var(--b1);padding:2px 8px;border-radius:10px}
+.tip-section{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);padding:24px;margin-bottom:16px;position:relative;overflow:hidden}
+.tip-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.4}
+.tip-section-title{font-family:'Orbitron',sans-serif;font-size:.85rem;font-weight:800;letter-spacing:2px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.tip-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--b1);transition:padding .2s}
+.tip-item:last-child{border-bottom:none}
+.tip-item:hover{padding-left:6px}
+.tip-num{font-family:'Orbitron',monospace;font-size:.75rem;font-weight:700;min-width:28px;height:28px;border-radius:50%;border:1px solid var(--b1);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;transition:all .2s}
+.tip-item:hover .tip-num{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 8px rgba(0,212,255,.2)}
+.tip-text{font-size:13px;color:var(--t2);line-height:1.6}
+.tip-text strong{color:var(--t1);font-weight:600}
+.tip-tag{display:inline-block;font-size:9px;padding:2px 7px;border-radius:10px;margin-top:5px;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.tag-imp{background:var(--rd);color:var(--red);border:1px solid rgba(255,45,85,.2)}
+.tag-pro{background:var(--gd);color:var(--green);border:1px solid rgba(0,255,136,.2)}
+.tag-tip{background:var(--yd);color:var(--gold);border:1px solid rgba(255,204,0,.2)}
+
+/* PAST PAPERS */
+.pp-layout{display:grid;grid-template-columns:1fr 260px;gap:18px}
+.pp-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.pp-fb{padding:6px 14px;border-radius:20px;border:1px solid var(--b1);background:transparent;color:var(--t2);font-size:10px;font-weight:700;cursor:pointer;font-family:'Share Tech Mono',monospace;transition:all .2s;letter-spacing:1px}
+.pp-fb:hover,.pp-fb.active{background:var(--pd);border-color:rgba(170,68,255,.3);color:var(--purple);box-shadow:0 0 8px rgba(170,68,255,.1)}
+.pp-upload{background:var(--s1);border:2px dashed var(--b2);border-radius:var(--r16);padding:30px;text-align:center;cursor:pointer;transition:all .25s;margin-bottom:20px;position:relative;overflow:hidden}
+.pp-upload:hover{border-color:var(--green);background:var(--gd);transform:scale(1.01)}
+.pp-upload.dov{border-color:var(--cyan);background:var(--cd)}
+.ppu-icon{font-size:2.5rem;margin-bottom:10px;opacity:.5;transition:all .25s}
+.pp-upload:hover .ppu-icon{opacity:1;transform:scale(1.1)}
+.ppu-title{font-family:'Orbitron',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:5px;letter-spacing:1px}
+.ppu-sub{font-size:11px;color:var(--t2);margin-bottom:14px;line-height:1.6;font-family:'Share Tech Mono',monospace}
+.ppu-opts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.ppu-opt{padding:7px 14px;border-radius:20px;border:1px solid var(--b1);background:var(--s2);color:var(--t2);font-size:10px;font-weight:700;cursor:pointer;transition:all .2s;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.ppu-opt:hover{border-color:var(--purple);color:var(--purple);background:var(--pd);box-shadow:0 0 8px rgba(170,68,255,.15)}
+.pp-form{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:20px;margin-bottom:16px;display:none;position:relative;overflow:hidden}
+.pp-form::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--purple),transparent);opacity:.5}
+.pp-form.show{display:block;animation:pgIn .3s ease}
+.pp-form-title{font-family:'Orbitron',sans-serif;font-size:.8rem;font-weight:800;margin-bottom:14px;letter-spacing:1px}
+.pp-form input,.pp-form select,.pp-form textarea{width:100%;background:var(--s2);border:1px solid var(--b1);border-radius:var(--r8);padding:9px 12px;color:var(--t1);font-family:'Exo 2',sans-serif;font-size:13px;outline:none;margin-bottom:10px;transition:border-color .2s}
+.pp-form input:focus,.pp-form select:focus,.pp-form textarea:focus{border-color:var(--purple);box-shadow:0 0 10px rgba(170,68,255,.08)}
+.pp-form textarea{resize:vertical;min-height:100px}
+.pp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pp-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);overflow:hidden;transition:all .25s;cursor:pointer;position:relative}
+.pp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--purple),transparent);opacity:0;transition:opacity .25s}
+.pp-card:hover{transform:translateY(-4px);border-color:var(--purple);box-shadow:0 12px 30px rgba(170,68,255,.12)}
+.pp-card:hover::before{opacity:1}
+.pp-thumb{width:100%;height:130px;background:var(--s2);display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative;overflow:hidden}
+.pp-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.pp-card:hover .pp-thumb img{transform:scale(1.05)}
+.pp-body{padding:12px 14px}
+.pp-title{font-family:'Orbitron',sans-serif;font-size:.75rem;font-weight:700;margin-bottom:3px;letter-spacing:.5px}
+.pp-sub{font-size:10px;color:var(--t3);font-family:'Share Tech Mono',monospace}
+.pp-tags{display:flex;gap:4px;margin-top:7px;flex-wrap:wrap}
+.pp-tag{font-size:9px;padding:2px 7px;border-radius:10px;background:var(--pd);color:var(--purple);border:1px solid rgba(170,68,255,.2);font-family:'Share Tech Mono',monospace}
+.pp-acts{display:flex;gap:5px;margin-top:9px}
+.pp-act{flex:1;padding:6px;border-radius:6px;border:1px solid var(--b1);background:var(--s2);color:var(--t2);font-size:9px;font-weight:700;cursor:pointer;transition:all .2s;text-align:center;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.pp-act:hover{border-color:var(--purple);color:var(--purple)}
+.pp-empty{text-align:center;padding:40px;color:var(--t3);background:var(--s1);border:1px dashed var(--b1);border-radius:var(--r12);font-family:'Share Tech Mono',monospace;grid-column:1/-1}
+
+/* MODAL */
+.modal-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:500;backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px}
+.modal-ov.show{display:flex}
+.modal{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r16);padding:28px;max-width:620px;width:100%;position:relative;animation:pgIn .3s ease;max-height:80vh;overflow-y:auto}
+.modal::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
+.modal-close{position:absolute;top:14px;right:14px;background:var(--s2);border:1px solid var(--b1);border-radius:6px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;color:var(--t2);transition:all .2s;font-family:'Share Tech Mono',monospace}
+.modal-close:hover{border-color:var(--red);color:var(--red)}
+.modal-title{font-family:'Orbitron',sans-serif;font-size:.9rem;font-weight:800;margin-bottom:16px;letter-spacing:1px}
+.modal img{width:100%;border-radius:var(--r8);margin-bottom:12px}
+.modal-txt{font-size:13px;color:var(--t2);line-height:1.7;white-space:pre-wrap;font-family:'Share Tech Mono',monospace}
+
+/* NOTIF */
+.notif{position:fixed;bottom:24px;right:24px;background:var(--s1);border:1px solid var(--b1);border-radius:var(--r12);padding:14px 18px;display:flex;align-items:center;gap:12px;z-index:600;box-shadow:0 8px 32px rgba(0,0,0,.5),0 0 20px rgba(0,212,255,.1);animation:slideUp .4s ease;max-width:300px}
+.notif::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent)}
+@keyframes slideUp{from{transform:translateY(80px);opacity:0}to{transform:translateY(0);opacity:1}}
+.notif-txt{font-size:13px;font-weight:600;color:var(--t1);font-family:'Exo 2',sans-serif}
+.notif-sub{font-size:10px;color:var(--t2);margin-top:2px;font-family:'Share Tech Mono',monospace}
+.notif-close{background:none;border:none;color:var(--t3);cursor:pointer;font-size:1rem;margin-left:8px;padding:2px}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .g4{grid-template-columns:repeat(3,1fr)}
+  .g5{grid-template-columns:repeat(4,1fr)}
+  .quiz-layout,.res-layout,.lb-layout,.typing-layout,.pp-layout{grid-template-columns:1fr}
+  .qp-panel{position:static}
+  .res-l{position:static}
+  .tips-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  :root{--sw:0px}
+  .sidebar{transform:translateX(-270px);width:270px}
+  .sidebar.open{transform:translateX(0)}
+  .sb-overlay.open{display:block}
+  .menu-btn{display:flex}
+  .main{margin-left:0}
+  .topbar{padding:0 14px 0 58px}
+  .page{padding:14px}
+  .hero{padding:20px}
+  .hero-corner{display:none}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g5{grid-template-columns:repeat(3,1fr)}
+  .cfg3{grid-template-columns:1fr}
+  .opts{grid-template-columns:1fr}
+  .qtop{grid-template-columns:1fr auto}
+  .qt-r{display:none}
+  .lb-row{grid-template-columns:40px 1fr 65px 55px}
+  .lb-tm{display:none}
+  .t-stats{grid-template-columns:repeat(2,1fr)}
+  .res-stats{grid-template-columns:repeat(2,1fr)}
+  .pp-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .g4,.g5{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="bg-fx">
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+  <div class="hex-particles" id="hex-particles"></div>
+</div>
+
+<button class="menu-btn" onclick="toggleSB()" id="menu-btn">☰</button>
+<div class="sb-overlay" id="sb-ov" onclick="toggleSB()"></div>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sb-logo">
+    <div class="logo-mark"><span class="lm-i">ILM</span><span class="lm-a">AUR</span><span class="lm-h">HUNAR</span><span class="lm-p">.PK</span></div>
+    <div class="logo-tag" id="logo-tag">PAKISTAN KA #1 FREE TEST PLATFORM</div>
+    <div class="logo-status"><span class="status-dot"></span><span id="status-txt">SYSTEM ONLINE</span></div>
+  </div>
+
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('en',this)" id="lb-en">🇬🇧 ENGLISH</button>
+    <button class="lang-btn" onclick="setLang('ur',this)" id="lb-ur">🇵🇰 اردو</button>
+  </div>
+
+  <nav class="sb-nav">
+    <div class="nav-grp-label" data-en="MAIN MENU" data-ur="مین مینو">MAIN MENU</div>
+    <div class="ni active" onclick="goPage('home',this)"><span class="ni-ic">🏠</span><span class="ni-lbl" data-en="Home" data-ur="ہوم">Home</span><span class="ni-bdg">LIVE</span></div>
+    <div class="ni" onclick="goPage('leaderboard',this)"><span class="ni-ic">🏆</span><span class="ni-lbl" data-en="Leaderboard" data-ur="لیڈر بورڈ">Leaderboard</span></div>
+    <div class="ni" onclick="goPage('tips',this)"><span class="ni-ic">💡</span><span class="ni-lbl" data-en="Career Tips" data-ur="کیریئر ٹپس">Career Tips</span><span class="ni-bdg ni-bdg-c">NEW</span></div>
+    <div class="ni" onclick="goPage('pastpapers',this)"><span class="ni-ic">📚</span><span class="ni-lbl" data-en="Past Papers" data-ur="پرانے پیپرز">Past Papers</span></div>
+    <div class="nav-grp-label" data-en="TOOLS" data-ur="ٹولز">TOOLS</div>
+    <div class="ni" onclick="goPage('typing',this)"><span class="ni-ic">⌨️</span><span class="ni-lbl" data-en="Typing Master" data-ur="ٹائپنگ ماسٹر">Typing Master</span></div>
+    <div class="nav-grp-label" data-en="QUICK TEST" data-ur="فوری ٹیسٹ">QUICK TEST</div>
+    <div class="ni" onclick="qExam('FPSC')"><span class="ni-ic">🏛️</span><span class="ni-lbl">FPSC</span></div>
+    <div class="ni" onclick="qExam('NTS')"><span class="ni-ic">📋</span><span class="ni-lbl">NTS</span></div>
+    <div class="ni" onclick="qExam('PPSC')"><span class="ni-ic">🦁</span><span class="ni-lbl">PPSC</span></div>
+    <div class="ni" onclick="qExam('ETEA')"><span class="ni-ic">🏔️</span><span class="ni-lbl">ETEA</span></div>
+    <div class="ni" onclick="qExam('CSS')"><span class="ni-ic">🎖️</span><span class="ni-lbl">CSS/PMS</span></div>
+  </nav>
+
+  <div class="sb-footer">
+    <div class="theme-row" onclick="toggleTheme()">
+      <span id="tt-ic">🌙</span>
+      <span style="font-size:11px;font-weight:700;color:var(--t2);font-family:'Share Tech Mono',monospace;letter-spacing:1px" id="tt-txt">DARK MODE</span>
+      <div class="tt-sw" id="tt-sw"></div>
+    </div>
+    <div class="sb-footer-txt"><strong>ILMAURHUNAR.PK</strong><br><span data-en="Free forever. No signup." data-ur="ہمیشہ مفت۔ سائن اپ نہیں۔">Free forever. No signup.</span><br>FPSC · NTS · PPSC · ETEA · CSS</div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+  <div class="topbar">
+    <div class="tb-title" id="tb-title">◈ TEST PLATFORM</div>
+    <div class="tb-right">
+      <div class="streak-chip">🔥 <span id="s-num">0</span></div>
+      <div class="user-chip">◉ GUEST</div>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-badge"><span class="status-dot"></span><span data-en="PAKISTAN'S #1 FREE TEST PLATFORM" data-ur="پاکستان کا نمبر 1 مفت ٹیسٹ پلیٹ فارم">PAKISTAN'S #1 FREE TEST PLATFORM</span></div>
+      <h1 data-en="Test Karo. Seekho.<br><em>Aage Badho.</em>" data-ur="ٹیسٹ دو۔ سیکھو۔<br><em>آگے بڑھو۔</em>">Test Karo. Seekho.<br><em>Aage Badho.</em></h1>
+      <p data-en="FPSC, NTS, PPSC, ETEA, CSS/PMS free preparation — MCQs, live timer, past papers, typing master, interview tips aur leaderboard ke saath. No signup. Always free." data-ur="FPSC، NTS، PPSC، ETEA، CSS/PMS کی مفت تیاری — MCQs، لائیو ٹائمر، پرانے پیپرز، ٹائپنگ ماسٹر، انٹرویو ٹپس اور لیڈر بورڈ کے ساتھ۔">FPSC, NTS, PPSC, ETEA, CSS/PMS free preparation — MCQs, live timer, past papers, typing master, interview tips aur leaderboard ke saath. No signup. Always free.</p>
+      <div class="hero-stats">
+        <div class="hs"><div class="hs-n">500+</div><div class="hs-l" data-en="MCQs" data-ur="سوالات">MCQs</div></div>
+        <div class="hs"><div class="hs-n">10+</div><div class="hs-l" data-en="Subjects" data-ur="مضامین">Subjects</div></div>
+        <div class="hs"><div class="hs-n">6</div><div class="hs-l" data-en="Exams" data-ur="امتحانات">Exams</div></div>
+        <div class="hs"><div class="hs-n" style="color:var(--gold)" data-en="Free" data-ur="مفت">Free</div><div class="hs-l" data-en="Forever" data-ur="ہمیشہ">Forever</div></div>
+      </div>
+      <div class="hero-corner">◈</div>
+    </div>
+
+    <div class="sec-title" data-en="◈ SELECT EXAM" data-ur="◈ امتحان منتخب کریں">◈ SELECT EXAM</div>
+    <div class="g4" style="margin-bottom:24px">
+      <div class="ec sel" onclick="selExam(this,'General')"><span class="ec-em">🌐</span><div class="ec-n">GENERAL</div><div class="ec-s" data-en="All Exams" data-ur="تمام امتحانات">All Exams</div></div>
+      <div class="ec" onclick="selExam(this,'FPSC')"><span class="ec-em">🏛️</span><div class="ec-n">FPSC</div><div class="ec-s" data-en="Federal Jobs" data-ur="وفاقی نوکریاں">Federal Jobs</div></div>
+      <div class="ec" onclick="selExam(this,'NTS')"><span class="ec-em">📋</span><div class="ec-n">NTS</div><div class="ec-s" data-en="Testing Service" data-ur="ٹیسٹنگ سروس">Testing Service</div></div>
+      <div class="ec" onclick="selExam(this,'PPSC')"><span class="ec-em">🦁</span><div class="ec-n">PPSC</div><div class="ec-s" data-en="Punjab Jobs" data-ur="پنجاب نوکریاں">Punjab Jobs</div></div>
+      <div class="ec" onclick="selExam(this,'ETEA')"><span class="ec-em">🏔️</span><div class="ec-n">ETEA</div><div class="ec-s" data-en="KPK Jobs" data-ur="خیبرپختونخوا نوکریاں">KPK Jobs</div></div>
+      <div class="ec" onclick="selExam(this,'CSS')"><span class="ec-em">🎖️</span><div class="ec-n">CSS/PMS</div><div class="ec-s" data-en="Elite Services" data-ur="اعلی خدمات">Elite Services</div></div>
+      <div class="ec" onclick="selExam(this,'KPPSC')"><span class="ec-em">⛰️</span><div class="ec-n">KPPSC</div><div class="ec-s" data-en="KPK Provincial" data-ur="صوبائی">KPK Provincial</div></div>
+      <div class="ec" onclick="selExam(this,'OnePaper')"><span class="ec-em">📄</span><div class="ec-n">ONE PAPER</div><div class="ec-s" data-en="Combined" data-ur="مجموعی">Combined</div></div>
+    </div>
+
+    <div class="sec-title" data-en="◈ SELECT SUBJECTS" data-ur="◈ مضامین منتخب کریں">◈ SELECT SUBJECTS <span style="font-size:9px;color:var(--t3);font-family:'Share Tech Mono',monospace;text-transform:lowercase;letter-spacing:0" data-en="(optional)" data-ur="(اختیاری)">(optional)</span></div>
+    <div class="g5" style="margin-bottom:24px">
+      <div class="sc" onclick="togSubj(this,'English')"><span>🔤</span><span class="sc-n" data-en="English" data-ur="انگریزی">English</span></div>
+      <div class="sc" onclick="togSubj(this,'Islamiyat')"><span>☪️</span><span class="sc-n" data-en="Islamiyat" data-ur="اسلامیات">Islamiyat</span></div>
+      <div class="sc" onclick="togSubj(this,'PakStudies')"><span>🇵🇰</span><span class="sc-n" data-en="Pak Studies" data-ur="پاکستان اسٹڈیز">Pak Studies</span></div>
+      <div class="sc" onclick="togSubj(this,'GK')"><span>🌍</span><span class="sc-n" data-en="General Knowledge" data-ur="عمومی علم">General Knowledge</span></div>
+      <div class="sc" onclick="togSubj(this,'Computer')"><span>💻</span><span class="sc-n" data-en="Computer" data-ur="کمپیوٹر">Computer</span></div>
+      <div class="sc" onclick="togSubj(this,'Physics')"><span>⚛️</span><span class="sc-n" data-en="Physics" data-ur="طبیعیات">Physics</span></div>
+      <div class="sc" onclick="togSubj(this,'Chemistry')"><span>🧪</span><span class="sc-n" data-en="Chemistry" data-ur="کیمیا">Chemistry</span></div>
+      <div class="sc" onclick="togSubj(this,'Zoology')"><span>🦋</span><span class="sc-n" data-en="Zoology" data-ur="حیوانیات">Zoology</span></div>
+      <div class="sc" onclick="togSubj(this,'Maths')"><span>📐</span><span class="sc-n" data-en="Mathematics" data-ur="ریاضی">Mathematics</span></div>
+      <div class="sc" onclick="togSubj(this,'CurrentAffairs')"><span>📰</span><span class="sc-n" data-en="Current Affairs" data-ur="حالات حاضرہ">Current Affairs</span></div>
+    </div>
+
+    <div class="sec-title" data-en="◈ TEST SETTINGS" data-ur="◈ ٹیسٹ ترتیبات">◈ TEST SETTINGS</div>
+    <div class="cfg3">
+      <div class="cfg-box"><label data-en="NUMBER OF QUESTIONS" data-ur="سوالوں کی تعداد">NUMBER OF QUESTIONS</label><input type="range" min="10" max="50" value="20" step="5" id="qc" oninput="document.getElementById('qcv').textContent=this.value"><div class="rv" id="qcv">20</div></div>
+      <div class="cfg-box"><label data-en="TIME PER QUESTION" data-ur="فی سوال وقت">TIME PER QUESTION</label><select id="tpq"><option value="30">30 seconds</option><option value="45" selected>45 seconds</option><option value="60">60 seconds</option><option value="90">90 seconds</option><option value="0">No limit</option></select></div>
+      <div class="cfg-box"><label data-en="DIFFICULTY" data-ur="مشکل درجہ">DIFFICULTY</label><select id="diff"><option value="mixed" selected>Mixed</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></div>
+    </div>
+    <button class="btn-g btn-full" onclick="startQuiz()" id="start-btn">◈ START TEST →</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="page" id="page-quiz">
+    <div class="qtop">
+      <div class="qt-l">
+        <div class="qt-i"><div class="qt-n" id="qt-ex" style="color:var(--cyan)">FPSC</div><div class="qt-l2" data-en="EXAM" data-ur="امتحان">EXAM</div></div>
+        <div class="qt-i"><div class="qt-n" id="qt-qn" style="color:var(--green)">1/20</div><div class="qt-l2" data-en="QUESTION" data-ur="سوال">QUESTION</div></div>
+      </div>
+      <div class="timer-w"><div class="t-ring"><svg width="60" height="60" viewBox="0 0 60 60"><circle class="t-rbg" cx="30" cy="30" r="25"/><circle class="t-rfill" id="t-rfill" cx="30" cy="30" r="25"/></svg><div class="t-val" id="t-val">45</div></div></div>
+      <div class="qt-r">
+        <div class="qt-i"><div class="qt-n" id="qt-sc" style="color:var(--gold)">0</div><div class="qt-l2" data-en="SCORE" data-ur="اسکور">SCORE</div></div>
+        <div class="qt-i"><div class="qt-n" id="qt-cor" style="color:var(--green)">0</div><div class="qt-l2" data-en="CORRECT" data-ur="صحیح">CORRECT</div></div>
+      </div>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" id="qprog" style="width:0%"></div></div>
+    <div class="quiz-layout">
+      <div>
+        <div class="q-card">
+          <div class="q-meta"><span class="q-bdg qb-n" id="q-nb">Q 1</span><span class="q-bdg qb-s" id="q-sb">GK</span></div>
+          <div class="q-txt" id="q-txt">Loading...</div>
+          <div class="opts" id="opts"></div>
+          <div class="expl" id="expl"><div class="expl-lbl" data-en="💡 EXPLANATION" data-ur="💡 وضاحت">💡 EXPLANATION</div><div id="expl-txt"></div></div>
+        </div>
+        <div class="q-nav"><button class="skip-btn" onclick="skipQ()" data-en="SKIP →" data-ur="چھوڑیں →">SKIP →</button><button class="btn-g btn-c" id="next-btn" onclick="nextQ()" style="display:none;padding:10px 22px;font-size:.8rem" data-en="NEXT →" data-ur="اگلا →">NEXT →</button></div>
+      </div>
+      <div class="qp-panel">
+        <div class="qp-title" data-en="NAVIGATOR" data-ur="نیویگیٹر">NAVIGATOR</div>
+        <div class="qp-dots" id="qp-dots"></div>
+        <div class="qp-leg">
+          <div class="qpl"><div class="qpl-dot" style="background:var(--cd);border:1px solid var(--cyan)"></div><span data-en="Current" data-ur="موجودہ">Current</span></div>
+          <div class="qpl"><div class="qpl-dot" style="background:var(--gd);border:1px solid var(--green)"></div><span data-en="Correct" data-ur="صحیح">Correct</span></div>
+          <div class="qpl"><div class="qpl-dot" style="background:var(--rd);border:1px solid var(--red)"></div><span data-en="Wrong" data-ur="غلط">Wrong</span></div>
+          <div class="qpl"><div class="qpl-dot" style="background:var(--yd);border:1px solid var(--gold)"></div><span data-en="Skipped" data-ur="چھوڑا">Skipped</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="page" id="page-result">
+    <div class="res-layout">
+      <div class="res-l">
+        <div class="res-ring-box">
+          <div class="rr-wrap"><svg width="150" height="150" viewBox="0 0 150 150"><circle class="rr-bg" cx="75" cy="75" r="65"/><circle class="rr-fill" id="rr-fill" cx="75" cy="75" r="65"/></svg><div class="rr-center"><div class="rr-pct" id="rr-pct">0%</div><div class="rr-lbl" data-en="YOUR SCORE" data-ur="آپ کا اسکور">YOUR SCORE</div></div></div>
+          <div class="res-grade" id="res-grade">—</div>
+          <div class="res-msg" id="res-msg"></div>
+        </div>
+        <div class="res-stats">
+          <div class="rs-c"><div class="rs-n nc" id="rc-cor">0</div><div class="rs-l" data-en="CORRECT" data-ur="صحیح">CORRECT</div></div>
+          <div class="rs-c"><div class="rs-n nw" id="rc-wr">0</div><div class="rs-l" data-en="WRONG" data-ur="غلط">WRONG</div></div>
+          <div class="rs-c"><div class="rs-n ny" id="rc-sk">0</div><div class="rs-l" data-en="SKIPPED" data-ur="چھوڑے">SKIPPED</div></div>
+          <div class="rs-c"><div class="rs-n nb" id="rc-tm">0s</div><div class="rs-l" data-en="TIME" data-ur="وقت">TIME</div></div>
+        </div>
+        <div class="act-row">
+          <button class="btn-g" onclick="restartQ()" style="padding:10px 16px;font-size:.75rem">🔄 <span data-en="RESTART" data-ur="دوبارہ">RESTART</span></button>
+          <button class="btn-o" onclick="goPage('home',null)" data-en="🏠 New Test" data-ur="🏠 نیا ٹیسٹ">🏠 New Test</button>
+          <button class="btn-o" onclick="goPage('leaderboard',null)">🏆</button>
+        </div>
+      </div>
+      <div>
+        <div class="rev-box">
+          <div class="rev-hdr"><span data-en="◈ REVIEW" data-ur="◈ جائزہ">◈ REVIEW</span><span id="rev-cnt" style="font-size:10px;color:var(--t3);font-family:'Share Tech Mono',monospace"></span></div>
+          <div id="rev-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEADERBOARD -->
+  <div class="page" id="page-leaderboard">
+    <div class="lb-layout">
+      <div>
+        <div class="lb-hdr">
+          <div class="lb-h-t">◈ <span data-en="LEADERBOARD" data-ur="لیڈر بورڈ">LEADERBOARD</span></div>
+          <div class="lb-fils">
+            <button class="lb-fb active" onclick="filterLB(this,'today')" data-en="TODAY" data-ur="آج">TODAY</button>
+            <button class="lb-fb" onclick="filterLB(this,'week')" data-en="WEEK" data-ur="ہفتہ">WEEK</button>
+            <button class="lb-fb" onclick="filterLB(this,'all')" data-en="ALL TIME" data-ur="سب وقت">ALL TIME</button>
+          </div>
+        </div>
+        <div class="lb-tbl">
+          <div class="lb-row lb-hrow"><div>#</div><div data-en="PLAYER" data-ur="کھلاڑی">PLAYER</div><div data-en="PTS" data-ur="پوائنٹ">PTS</div><div data-en="SCORE" data-ur="اسکور">SCORE</div><div data-en="TIME" data-ur="وقت">TIME</div></div>
+          <div id="lb-body"></div>
+        </div>
+      </div>
+      <div>
+        <div class="lb-side-c"><div class="lbs-t" data-en="◈ TOP 3" data-ur="◈ ٹاپ 3">◈ TOP 3</div><div id="top3"></div></div>
+        <div class="lb-side-c"><div class="lbs-t" data-en="◈ YOUR STATS" data-ur="◈ آپ کے اعداد">◈ YOUR STATS</div><div class="my-stats"><span data-en="Tests: " data-ur="ٹیسٹ: ">Tests: </span><strong id="my-tc">0</strong><br><span data-en="Best: " data-ur="بہترین: ">Best: </span><strong id="my-best" style="color:var(--green)">—</strong><br><span data-en="Streak: " data-ur="سلسلہ: ">Streak: </span><strong id="my-str" style="color:var(--gold)">0</strong></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAREER TIPS -->
+  <div class="page" id="page-tips">
+    <div class="sec-title" data-en="◈ CAREER TIPS & TRICKS" data-ur="◈ کیریئر ٹپس">◈ CAREER TIPS & TRICKS</div>
+
+    <div class="tips-grid" style="margin-bottom:24px">
+      <div class="tip-card tc-int" onclick="scrollTo('#sec-interview')">
+        <span class="tip-card-icon">🎤</span>
+        <span class="tip-card-count" data-en="20 Tips" data-ur="20 ٹپس">20 Tips</span>
+        <div class="tip-card-title" data-en="INTERVIEW TIPS" data-ur="انٹرویو ٹپس">INTERVIEW TIPS</div>
+        <div class="tip-card-sub" data-en="How to ace any interview and impress the panel" data-ur="انٹرویو میں کیسے کامیاب ہوں">How to ace any interview and impress the panel</div>
+      </div>
+      <div class="tip-card tc-prs" onclick="scrollTo('#sec-presentation')">
+        <span class="tip-card-icon">📊</span>
+        <span class="tip-card-count" data-en="15 Tips" data-ur="15 ٹپس">15 Tips</span>
+        <div class="tip-card-title" data-en="PRESENTATION TIPS" data-ur="پریزنٹیشن ٹپس">PRESENTATION TIPS</div>
+        <div class="tip-card-sub" data-en="Present like a pro — engage, impress, convince" data-ur="پیشہ ورانہ انداز میں پیش کریں">Present like a pro — engage, impress, convince</div>
+      </div>
+      <div class="tip-card tc-imp" onclick="scrollTo('#sec-impress')">
+        <span class="tip-card-icon">⭐</span>
+        <span class="tip-card-count" data-en="12 Tips" data-ur="12 ٹپس">12 Tips</span>
+        <div class="tip-card-title" data-en="IMPRESS INTERVIEWERS" data-ur="انٹرویورز کو متاثر کریں">IMPRESS INTERVIEWERS</div>
+        <div class="tip-card-sub" data-en="Secret techniques to stand out from the crowd" data-ur="بھیڑ سے الگ نکلنے کے راز">Secret techniques to stand out from the crowd</div>
+      </div>
+      <div class="tip-card tc-tks" onclick="scrollTo('#sec-tricks')">
+        <span class="tip-card-icon">🧠</span>
+        <span class="tip-card-count" data-en="18 Tips" data-ur="18 ٹپس">18 Tips</span>
+        <div class="tip-card-title" data-en="EXAM TRICKS" data-ur="امتحان کی چالیں">EXAM TRICKS</div>
+        <div class="tip-card-sub" data-en="Smart strategies to maximize your MCQ score" data-ur="MCQ اسکور بڑھانے کی ہوشیار حکمت عملی">Smart strategies to maximize your MCQ score</div>
+      </div>
+    </div>
+
+    <!-- INTERVIEW TIPS -->
+    <div class="tip-section" id="sec-interview">
+      <div class="tip-section-title" style="color:var(--cyan)">🎤 <span data-en="INTERVIEW TIPS — How to Ace Any Interview" data-ur="انٹرویو ٹپس — کسی بھی انٹرویو میں کامیاب ہوں">INTERVIEW TIPS — How to Ace Any Interview</span></div>
+      <div id="tips-interview-list"></div>
+    </div>
+
+    <!-- IMPRESS INTERVIEWERS -->
+    <div class="tip-section" id="sec-impress">
+      <div class="tip-section-title" style="color:var(--green)">⭐ <span data-en="HOW TO IMPRESS INTERVIEWERS" data-ur="انٹرویورز کو کیسے متاثر کریں">HOW TO IMPRESS INTERVIEWERS</span></div>
+      <div id="tips-impress-list"></div>
+    </div>
+
+    <!-- PRESENTATION TIPS -->
+    <div class="tip-section" id="sec-presentation">
+      <div class="tip-section-title" style="color:var(--gold)">📊 <span data-en="PRESENTATION TIPS & TRICKS" data-ur="پریزنٹیشن ٹپس اور چالیں">PRESENTATION TIPS & TRICKS</span></div>
+      <div id="tips-pres-list"></div>
+    </div>
+
+    <!-- EXAM TRICKS -->
+    <div class="tip-section" id="sec-tricks">
+      <div class="tip-section-title" style="color:var(--purple)">🧠 <span data-en="SMART EXAM TRICKS" data-ur="ہوشیار امتحانی چالیں">SMART EXAM TRICKS</span></div>
+      <div id="tips-tricks-list"></div>
+    </div>
+  </div>
+
+  <!-- TYPING -->
+  <div class="page" id="page-typing">
+    <div class="typing-layout">
+      <div>
+        <div class="t-stats">
+          <div class="tsc wpm-c"><div class="tsc-n" id="t-wpm">0</div><div class="tsc-l" data-en="WPM" data-ur="الفاظ/منٹ">WPM</div></div>
+          <div class="tsc acc-c"><div class="tsc-n" id="t-acc">100%</div><div class="tsc-l" data-en="ACCURACY" data-ur="درستگی">ACCURACY</div></div>
+          <div class="tsc err-c"><div class="tsc-n" id="t-err">0</div><div class="tsc-l" data-en="ERRORS" data-ur="غلطیاں">ERRORS</div></div>
+          <div class="tsc time-c"><div class="tsc-n" id="t-time">60</div><div class="tsc-l" data-en="SECONDS" data-ur="سیکنڈ">SECONDS</div></div>
+        </div>
+        <div class="timer-sel">
+          <span class="ts-lbl" data-en="TIMER:" data-ur="ٹائمر:">TIMER:</span>
+          <button class="ts-pill at" onclick="setTT(this,60)">1 MIN</button>
+          <button class="ts-pill" onclick="setTT(this,180)">3 MIN</button>
+          <button class="ts-pill" onclick="setTT(this,300)">5 MIN</button>
+          <span class="ts-lbl" style="margin-left:8px" data-en="MODE:" data-ur="موڈ:">MODE:</span>
+          <button class="ts-pill at" onclick="setD2(this,'easy')" data-en="EASY" data-ur="آسان">EASY</button>
+          <button class="ts-pill" onclick="setD2(this,'medium')" data-en="MEDIUM" data-ur="درمیانہ">MEDIUM</button>
+          <button class="ts-pill" onclick="setD2(this,'hard')" data-en="HARD" data-ur="مشکل">HARD</button>
+        </div>
+        <div class="cat-row">
+          <span class="ts-lbl" data-en="TOPIC:" data-ur="موضوع:">TOPIC:</span>
+          <button class="cat-pill ac2" onclick="setCat(this,'general')" data-en="GENERAL" data-ur="عمومی">GENERAL</button>
+          <button class="cat-pill" onclick="setCat(this,'pakistan')" data-en="PAKISTAN" data-ur="پاکستان">PAKISTAN</button>
+          <button class="cat-pill" onclick="setCat(this,'science')" data-en="SCIENCE" data-ur="سائنس">SCIENCE</button>
+          <button class="cat-pill" onclick="setCat(this,'tech')" data-en="TECH" data-ur="ٹیک">TECH</button>
+          <button class="cat-pill" onclick="setCat(this,'islam')" data-en="ISLAMIC" data-ur="اسلامی">ISLAMIC</button>
+        </div>
+        <div class="typing-prog"><div class="tp-bar"><div class="tp-fill" id="tpf" style="width:0%"></div></div><div class="tp-lbl" id="tpl">0 / 0 characters</div></div>
+        <div class="type-box" id="type-box"></div>
+        <div class="type-result-popup" id="type-result"></div>
+        <input class="type-input" id="type-input" type="text" placeholder="Click START — then type here..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" disabled oninput="handleType()">
+        <div class="type-btn-row">
+          <button class="t-btn go" onclick="startType()" id="t-start" data-en="▶ START" data-ur="▶ شروع">▶ START</button>
+          <button class="t-btn" onclick="resetType()" data-en="↺ RESET" data-ur="↺ ری سیٹ">↺ RESET</button>
+          <button class="t-btn" onclick="newTypeText()" data-en="🔀 NEW TEXT" data-ur="🔀 نیا متن">🔀 NEW TEXT</button>
+        </div>
+      </div>
+      <div>
+        <div class="wpm-chart-box"><div class="wcb-t" data-en="⚡ WPM CHART" data-ur="⚡ WPM چارٹ">⚡ WPM CHART</div><div class="wpm-bars" id="wpm-bars"><div style="color:var(--t3);font-size:10px;width:100%;text-align:center;padding-top:20px;font-family:'Share Tech Mono',monospace" data-en="Start typing..." data-ur="ٹائپنگ شروع کریں...">Start typing...</div></div></div>
+        <div class="lb-side-c"><div class="lbs-t" data-en="💡 TYPING TIPS" data-ur="💡 ٹائپنگ ٹپس">💡 TYPING TIPS</div><div style="font-size:11px;color:var(--t2);line-height:2;font-family:'Share Tech Mono',monospace">→ <span data-en="Wrists relaxed" data-ur="کلائی آرام دہ">Wrists relaxed</span><br>→ <span data-en="Eyes on screen" data-ur="نظر اسکرین پر">Eyes on screen</span><br>→ <span data-en="Accuracy first" data-ur="پہلے درستگی">Accuracy first</span><br>→ <span data-en="15 min daily" data-ur="روز 15 منٹ">15 min daily</span><br>→ <span data-en="Target: 60+ WPM" data-ur="ہدف: 60+ WPM">Target: 60+ WPM</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAST PAPERS -->
+  <div class="page" id="page-pastpapers">
+    <div class="pp-layout">
+      <div>
+        <div class="pp-filters">
+          <button class="pp-fb active" onclick="filterPP(this,'all')" data-en="ALL" data-ur="سب">ALL</button>
+          <button class="pp-fb" onclick="filterPP(this,'FPSC')">FPSC</button>
+          <button class="pp-fb" onclick="filterPP(this,'NTS')">NTS</button>
+          <button class="pp-fb" onclick="filterPP(this,'PPSC')">PPSC</button>
+          <button class="pp-fb" onclick="filterPP(this,'ETEA')">ETEA</button>
+          <button class="pp-fb" onclick="filterPP(this,'CSS')">CSS</button>
+        </div>
+        <div class="pp-upload" id="pp-ul" onclick="showPPF()" ondragover="event.preventDefault();this.classList.add('dov')" ondragleave="this.classList.remove('dov')" ondrop="handleDrop(event)">
+          <div class="ppu-icon">📄</div>
+          <div class="ppu-title" data-en="UPLOAD PAST PAPER" data-ur="پرانا پیپر اپلوڈ کریں">UPLOAD PAST PAPER</div>
+          <div class="ppu-sub" data-en="Image, text or link — drag & drop or click" data-ur="تصویر، متن یا لنک — ڈریگ اور ڈراپ یا کلک کریں">Image, text or link — drag & drop or click</div>
+          <div class="ppu-opts">
+            <button class="ppu-opt" onclick="event.stopPropagation();showPPFT('image')" data-en="📸 Image" data-ur="📸 تصویر">📸 Image</button>
+            <button class="ppu-opt" onclick="event.stopPropagation();showPPFT('text')" data-en="✍️ Text" data-ur="✍️ متن">✍️ Text</button>
+            <button class="ppu-opt" onclick="event.stopPropagation();showPPFT('link')" data-en="🔗 Link" data-ur="🔗 لنک">🔗 Link</button>
+          </div>
+        </div>
+        <div class="pp-form" id="pp-form">
+          <div class="pp-form-title" id="pp-ft">📸 IMAGE UPLOAD</div>
+          <input type="text" id="pp-title" placeholder="Paper title...">
+          <select id="pp-exam"><option value="">Select Exam</option><option>FPSC</option><option>NTS</option><option>PPSC</option><option>ETEA</option><option>CSS/PMS</option><option>KPPSC</option></select>
+          <select id="pp-year"><option value="">Select Year</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>Older</option></select>
+          <div id="pp-ia"></div>
+          <div style="display:flex;gap:9px;margin-top:4px">
+            <button class="btn-g" onclick="savePP()" style="padding:10px 20px;font-size:.75rem" data-en="SAVE" data-ur="محفوظ کریں">SAVE</button>
+            <button class="btn-o" onclick="document.getElementById('pp-form').classList.remove('show')" data-en="Cancel" data-ur="منسوخ">Cancel</button>
+          </div>
+        </div>
+        <div class="sec-title" data-en="◈ UPLOADED PAPERS" data-ur="◈ اپلوڈ شدہ پیپرز">◈ UPLOADED PAPERS</div>
+        <div class="pp-grid" id="pp-grid"><div class="pp-empty" data-en="📭 No papers yet. Upload above!" data-ur="📭 ابھی کوئی پیپر نہیں۔ اوپر سے اپلوڈ کریں!">📭 No papers yet. Upload above!</div></div>
+      </div>
+      <div>
+        <div class="lb-side-c"><div class="lbs-t" data-en="◈ STATS" data-ur="◈ اعداد">◈ STATS</div><div class="my-stats">Total: <strong id="pp-tot">0</strong><br>FPSC: <strong id="pp-fpsc">0</strong><br>NTS: <strong id="pp-nts">0</strong><br>PPSC: <strong id="pp-ppsc">0</strong><br>ETEA: <strong id="pp-etea">0</strong></div></div>
+        <div class="lb-side-c" style="margin-top:14px"><div class="lbs-t" data-en="💡 UPLOAD TIPS" data-ur="💡 اپلوڈ ٹپس">💡 UPLOAD TIPS</div><div style="font-size:11px;color:var(--t2);line-height:2;font-family:'Share Tech Mono',monospace">→ <span data-en="Clear photos only" data-ur="صرف واضح تصاویر">Clear photos only</span><br>→ <span data-en="Select correct exam" data-ur="صحیح امتحان منتخب کریں">Select correct exam</span><br>→ <span data-en="Add correct year" data-ur="صحیح سال لکھیں">Add correct year</span><br>→ <span data-en="Help others learn" data-ur="دوسروں کی مدد کریں">Help others learn</span></div></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end main -->
+</div><!-- end layout -->
+
+<!-- MODAL -->
+<div class="modal-ov" id="modal-ov" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-title" id="modal-title"></div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════
+// MCQ DB
+// ══════════════════════
+var DB=[
+  {s:'English',q:'The plural of "phenomenon" is:',o:['phenomenons','phenomenas','phenomena','phenomenes'],a:2,e:'Greek-origin: phenomenon → phenomena. Similar: criterion → criteria.'},
+  {s:'English',q:'Correct passive of "She wrote a letter":',o:['A letter is written by her.','A letter was written by her.','A letter has been written.','A letter had written by her.'],a:1,e:'Simple past active → simple past passive = was/were + past participle.'},
+  {s:'English',q:'Synonym of "benevolent":',o:['cruel','generous','selfish','arrogant'],a:1,e:'Benevolent = kind and generous.'},
+  {s:'English',q:'Antonym of "verbose":',o:['wordy','lengthy','concise','talkative'],a:2,e:'Verbose = too many words. Antonym = concise.'},
+  {s:'English',q:'Subjunctive mood — correct sentence:',o:['If I was you, I would go.','If I were you, I would go.','If I am you, I will go.','If I be you, I shall go.'],a:1,e:'Subjunctive uses "were" in unreal conditions.'},
+  {s:'Islamiyat',q:'First revelation of Quran:',o:['Surah Al-Fatiha','First 5 verses of Surah Al-Alaq','Surah Al-Baqarah','Surah Al-Ikhlas'],a:1,e:'"Iqra bismi rabbika..." — Cave Hira, 610 CE.'},
+  {s:'Islamiyat',q:'Total Surahs in Holy Quran:',o:['112','113','114','115'],a:2,e:'114 Surahs, 30 Paras, 6236 verses.'},
+  {s:'Islamiyat',q:'Longest Surah of Quran:',o:['Al-Imran','Al-Nisa','Al-Baqarah','Al-Maidah'],a:2,e:'Surah Al-Baqarah — 286 verses.'},
+  {s:'Islamiyat',q:'"Sword of Allah" title:',o:['Hazrat Ali (RA)','Hazrat Umar (RA)','Hazrat Khalid bin Waleed (RA)','Hazrat Abu Bakr (RA)'],a:2,e:'Hazrat Khalid bin Waleed (RA).'},
+  {s:'PakStudies',q:'Pakistan became Republic on:',o:['14 Aug 1947','23 Mar 1956','7 Oct 1958','1 Jul 1970'],a:1,e:'Islamic Republic on 23 March 1956.'},
+  {s:'PakStudies',q:'Highest peak in Pakistan:',o:['Nanga Parbat','Tirich Mir','K-2','Broad Peak'],a:2,e:'K-2 (8,611m) — 2nd highest in world.'},
+  {s:'PakStudies',q:'Pakistan Resolution passed on:',o:['23 Mar 1940','23 Mar 1956','14 Aug 1947','11 Aug 1947'],a:0,e:'Lahore Resolution — 23 March 1940.'},
+  {s:'PakStudies',q:'Longest river of Pakistan:',o:['Chenab','Jhelum','Ravi','Indus'],a:3,e:'Indus River — 3,180 km.'},
+  {s:'GK',q:'UN founded in:',o:['1944','1945','1946','1947'],a:1,e:'24 October 1945.'},
+  {s:'GK',q:'Largest continent:',o:['Africa','North America','Europe','Asia'],a:3,e:'Asia — 44.6 million km².'},
+  {s:'GK',q:'Most populous country 2024:',o:['USA','China','India','Indonesia'],a:2,e:'India surpassed China in 2023.'},
+  {s:'GK',q:'Capital of Australia:',o:['Sydney','Melbourne','Brisbane','Canberra'],a:3,e:'Canberra — not Sydney!'},
+  {s:'Computer',q:'Which is NOT an operating system?',o:['Windows 11','macOS','Oracle','Linux'],a:2,e:'Oracle is a DBMS, not an OS.'},
+  {s:'Computer',q:'CPU stands for:',o:['Central Processing Unit','Computer Processing Unit','Central Program Unit','Core Processing Unit'],a:0,e:'Central Processing Unit.'},
+  {s:'Computer',q:'Email sending protocol:',o:['HTTP','FTP','SMTP','TCP'],a:2,e:'SMTP = Simple Mail Transfer Protocol.'},
+  {s:'Computer',q:'RAM stands for:',o:['Read Access Memory','Random Access Memory','Rapid Access Memory','Read and Modify'],a:1,e:'Random Access Memory.'},
+  {s:'Computer',q:'Binary of decimal 10:',o:['1100','1010','1001','1011'],a:1,e:'1010 — 8+2=10.'},
+  {s:'Physics',q:'SI unit of electric current:',o:['Volt','Watt','Ampere','Ohm'],a:2,e:'Ampere (A).'},
+  {s:'Physics',q:'Speed of light:',o:['3×10⁶ m/s','3×10⁸ m/s','3×10¹⁰ m/s','3×10⁴ m/s'],a:1,e:'c = 3×10⁸ m/s.'},
+  {s:'Physics',q:"Newton's First Law is:",o:['Action-Reaction','Acceleration','Law of Inertia','Gravity'],a:2,e:'Law of Inertia.'},
+  {s:'Chemistry',q:'Atomic number of Carbon:',o:['4','6','8','12'],a:1,e:'6 protons. Mass = 12.'},
+  {s:'Chemistry',q:'Gas in photosynthesis:',o:['CO₂','H₂','N₂','O₂'],a:3,e:'O₂ released.'},
+  {s:'Chemistry',q:'pH of pure water:',o:['0','7','14','4'],a:1,e:'Neutral = 7.'},
+  {s:'Chemistry',q:'Most abundant atmospheric gas:',o:['Oxygen','CO₂','Argon','Nitrogen'],a:3,e:'N₂ = 78%.'},
+  {s:'Zoology',q:'Study of birds:',o:['Herpetology','Ornithology','Entomology','Ichthyology'],a:1,e:'Ornithology.'},
+  {s:'Zoology',q:'Universal Receiver blood group:',o:['A','B','O','AB'],a:3,e:'AB+.'},
+  {s:'Zoology',q:'Longest bone:',o:['Tibia','Humerus','Femur','Fibula'],a:2,e:'Femur.'},
+  {s:'Maths',q:'15% of 200:',o:['25','30','35','20'],a:1,e:'30.'},
+  {s:'Maths',q:'If x²=81, x=',o:['7','8','9','11'],a:2,e:'9.'},
+  {s:'Maths',q:'Angles in triangle:',o:['90°','180°','270°','360°'],a:1,e:'180°.'},
+  {s:'CurrentAffairs',q:'G20 Summit 2023:',o:['USA','China','India','Brazil'],a:2,e:'New Delhi, Sep 2023.'},
+  {s:'CurrentAffairs',q:'UN Secretary General:',o:['Ban Ki-moon','Kofi Annan','António Guterres','Tedros'],a:2,e:'António Guterres.'},
+  {s:'CurrentAffairs',q:'ICC World Cup 2023 winner:',o:['India','Australia','England','South Africa'],a:1,e:'Australia.'},
+];
+
+// TIPS DATA
+var TIPS={
+  interview:{
+    en:[
+      {t:'Research the Organization',d:'Before your interview, thoroughly research the organization. Know their mission, vision, recent achievements, and challenges. Interviewers are impressed by candidates who show genuine interest.',tags:['IMPORTANT']},
+      {t:'Dress Professionally',d:'Wear formal, clean, and pressed clothes. In Pakistan, shalwar kameez or Western formal both work. Your appearance creates the first impression — make it count.',tags:['PRO TIP']},
+      {t:'Arrive 10-15 Minutes Early',d:'Never be late. Arriving early shows respect for the interviewer\'s time and gives you time to settle your nerves and review your notes.',tags:['IMPORTANT']},
+      {t:'Firm Handshake & Eye Contact',d:'Greet with a firm (not crushing) handshake and maintain natural eye contact. This shows confidence and trustworthiness.',tags:['PRO TIP']},
+      {t:'Use the STAR Method',d:'For behavioral questions, use Situation-Task-Action-Result format. This structures your answers clearly and shows analytical thinking.',tags:['TECHNIQUE']},
+      {t:'Prepare Your Introduction',d:'"Tell me about yourself" — prepare a 2-minute confident answer covering your education, experience, and why you\'re the right fit.',tags:['IMPORTANT']},
+      {t:'Ask Intelligent Questions',d:'At the end, ask thoughtful questions like "What does success look like in this role?" — never say "I have no questions."',tags:['PRO TIP']},
+      {t:'Know Your CV Inside Out',d:'Be ready to discuss every point on your CV in detail. Interviewers often probe CV claims.',tags:['IMPORTANT']},
+      {t:'Body Language Matters',d:'Sit straight, don\'t fidget, nod occasionally to show you\'re listening, and smile naturally. 55% of communication is non-verbal.',tags:['PRO TIP']},
+      {t:'Turn Weaknesses into Strengths',d:'When asked about weaknesses, mention a real one but show how you\'re actively working to improve it.',tags:['TECHNIQUE']},
+      {t:'Speak Slowly and Clearly',d:'Nervousness makes people speak fast. Take a breath, speak slowly, and clearly. Pause before answering to collect your thoughts.',tags:['TIP']},
+      {t:'Show Enthusiasm',d:'Express genuine excitement about the role. Say things like "I am very excited about this opportunity because..."',tags:['PRO TIP']},
+      {t:'Prepare for Common Questions',d:'Practice answers for: "Why do you want this job?", "What are your strengths?", "Where do you see yourself in 5 years?"',tags:['IMPORTANT']},
+      {t:'Follow Up with a Thank You',d:'After the interview, send a polite email thanking the interviewer. This shows professionalism and keeps you memorable.',tags:['TIP']},
+    ],
+    ur:[
+      {t:'ادارے کی تحقیق کریں',d:'انٹرویو سے پہلے ادارے کے بارے میں مکمل معلومات حاصل کریں۔ ان کا مشن، حالیہ کامیابیاں اور چیلنجز جانیں۔',tags:['اہم']},
+      {t:'پیشہ ورانہ لباس پہنیں',d:'صاف ستھرا اور استری کیا ہوا رسمی لباس پہنیں۔ آپ کی ظاہری شخصیت پہلا تاثر بناتی ہے۔',tags:['پرو ٹپ']},
+      {t:'10-15 منٹ پہلے پہنچیں',d:'کبھی دیر نہ کریں۔ جلدی آنا وقت کی عزت ظاہر کرتا ہے اور آپ کو تیار ہونے کا وقت دیتا ہے۔',tags:['اہم']},
+      {t:'مضبوط مصافحہ اور آنکھوں میں آنکھیں',d:'پراعتماد مصافحہ اور قدرتی آنکھ سے رابطہ اعتماد اور قابل اعتماد ہونا ظاہر کرتا ہے۔',tags:['پرو ٹپ']},
+      {t:'STAR طریقہ استعمال کریں',d:'صورتحال، کام، عمل، نتیجہ — اس فارمیٹ میں جوابات دیں۔ یہ تجزیاتی سوچ ظاہر کرتا ہے۔',tags:['تکنیک']},
+      {t:'اپنا تعارف تیار کریں',d:'"اپنے بارے میں بتائیں" — 2 منٹ کا پراعتماد جواب تیار کریں جس میں تعلیم، تجربہ اور موزونیت شامل ہو۔',tags:['اہم']},
+      {t:'ذہین سوالات پوچھیں',d:'آخر میں پوچھیں: "اس عہدے میں کامیابی کیسی نظر آتی ہے؟" — کبھی نہ کہیں "میرے کوئی سوال نہیں۔"',tags:['پرو ٹپ']},
+      {t:'اپنا CV اچھی طرح جانیں',d:'CV کے ہر نکتے پر تفصیل سے بات کرنے کے لیے تیار رہیں۔',tags:['اہم']},
+      {t:'جسمانی زبان اہم ہے',d:'سیدھے بیٹھیں، گھبراہٹ نہ دکھائیں، قدرتی مسکراہٹ رکھیں۔ 55% مواصلت غیر زبانی ہے۔',tags:['پرو ٹپ']},
+    ]
+  },
+  impress:{
+    en:[
+      {t:'Mirror the Interviewer\'s Energy',d:'Match the tone and pace of the interviewer. If they\'re formal, be formal. If they\'re relaxed, be slightly more relaxed.',tags:['PSYCHOLOGY']},
+      {t:'Use Their Name',d:'Occasionally address the interviewer by name (Mr. Ahmed, Ma\'am). This creates rapport and shows respect.',tags:['PRO TIP']},
+      {t:'Show Data and Numbers',d:'Instead of "I improved performance", say "I improved team productivity by 35% in 6 months." Numbers impress.',tags:['IMPORTANT']},
+      {t:'Tell a Story',d:'Humans remember stories, not facts. Frame your answers as brief, compelling stories with a beginning, challenge, and result.',tags:['TECHNIQUE']},
+      {t:'Show Passion for Growth',d:'Say "I am always reading/learning about [field]. Recently I learned about X." This shows proactiveness.',tags:['PRO TIP']},
+      {t:'Demonstrate Problem-Solving',d:'For every challenge you mention, immediately follow with how you solved or would solve it. Never just present problems.',tags:['IMPORTANT']},
+      {t:'Make the Interviewer Feel Smart',d:'Acknowledge their insights: "That\'s an excellent point, and I believe..." This creates a positive dynamic.',tags:['PSYCHOLOGY']},
+      {t:'End with a Strong Close',d:'Before leaving say: "I am very excited about this opportunity and I am confident I can contribute significantly to your team."',tags:['IMPORTANT']},
+      {t:'Remember Small Details',d:'If the interviewer mentions their name or a detail early on, reference it later. Shows exceptional listening skills.',tags:['PRO TIP']},
+      {t:'Be Authentic',d:'Don\'t try to be someone you\'re not. Authenticity is more impressive than a rehearsed performance. Be your best self.',tags:['TIP']},
+    ],
+    ur:[
+      {t:'انٹرویور کی توانائی سے ملیں',d:'انٹرویور کے لہجے اور رفتار کے مطابق خود کو ڈھالیں۔ رسمی ہوں تو رسمی، آرام دہ ہوں تو قدرے آرام دہ۔',tags:['نفسیات']},
+      {t:'ان کا نام استعمال کریں',d:'کبھی کبھی انٹرویور کو نام سے مخاطب کریں۔ یہ تعلق اور احترام ظاہر کرتا ہے۔',tags:['پرو ٹپ']},
+      {t:'اعداد اور ڈیٹا استعمال کریں',d:'"بہتری لائی" کہنے کی بجائے "6 ماہ میں 35% پیداواریت بڑھائی" کہیں۔',tags:['اہم']},
+      {t:'کہانی سنائیں',d:'انسان حقائق نہیں، کہانیاں یاد رکھتے ہیں۔ اپنے جوابات مختصر لیکن دلکش کہانیوں کی صورت میں دیں۔',tags:['تکنیک']},
+      {t:'ترقی کا جذبہ ظاہر کریں',d:'"میں ہمیشہ اس شعبے میں پڑھتا/سیکھتا ہوں" یہ پیش قدمی ظاہر کرتا ہے۔',tags:['پرو ٹپ']},
+    ]
+  },
+  presentation:{
+    en:[
+      {t:'Start with a Hook',d:'Begin with a surprising fact, powerful quote, or rhetorical question. You have 30 seconds to grab attention.',tags:['IMPORTANT']},
+      {t:'The Rule of Three',d:'Structure your presentation around 3 main points. The human brain remembers information better in groups of three.',tags:['TECHNIQUE']},
+      {t:'Know Your Audience',d:'Tailor your language, examples, and depth based on who you\'re presenting to. Board members need different content than students.',tags:['PRO TIP']},
+      {t:'Less Text, More Visuals',d:'Each slide should have maximum 6 words. Use charts, images, and icons. Your slides are a backdrop, not a script.',tags:['IMPORTANT']},
+      {t:'Use Confident Body Language',d:'Stand straight, walk around, use hand gestures naturally. Avoid crossing arms or hiding behind the podium.',tags:['PRO TIP']},
+      {t:'Pause for Effect',d:'Deliberate pauses after key points create emphasis and allow the audience to absorb information.',tags:['TECHNIQUE']},
+      {t:'Tell Stories and Use Examples',d:'Abstract concepts become memorable with real examples. "For example, when NASA..." is more powerful than dry facts.',tags:['IMPORTANT']},
+      {t:'Practice Out Loud',d:'Practice your full presentation aloud at least 3 times. Only out-loud practice reveals the real pacing and flow.',tags:['TIP']},
+      {t:'Handle Questions Confidently',d:'When asked a question you don\'t know: "That\'s a great question. I don\'t have that data right now, but I will get back to you."',tags:['PRO TIP']},
+      {t:'Strong Conclusion',d:'End with a clear call-to-action or memorable statement. The last 2 minutes are what the audience remembers most.',tags:['IMPORTANT']},
+      {t:'Eye Contact Distribution',d:'Divide your eye contact across the room in a W or Z pattern. Don\'t stare at one person or read from the screen.',tags:['TECHNIQUE']},
+      {t:'Control Your Voice',d:'Vary your tone, pitch, and speed. Monotone voices put audiences to sleep. Use emphasis on key words.',tags:['PRO TIP']},
+    ],
+    ur:[
+      {t:'ہک سے شروع کریں',d:'حیران کن حقیقت، طاقتور اقتباس یا سوال سے شروع کریں۔ آپ کے پاس توجہ حاصل کرنے کے لیے 30 سیکنڈ ہیں۔',tags:['اہم']},
+      {t:'تین کا اصول',d:'اپنی پریزنٹیشن 3 مرکزی نکات کے گرد بنائیں۔ انسانی دماغ تین کے گروہوں میں بہتر یاد رکھتا ہے۔',tags:['تکنیک']},
+      {t:'اپنے سامعین کو جانیں',d:'جن کے سامنے پیش کر رہے ہیں ان کے مطابق زبان، مثالیں اور گہرائی منتخب کریں۔',tags:['پرو ٹپ']},
+      {t:'کم متن، زیادہ تصاویر',d:'ہر سلائیڈ پر زیادہ سے زیادہ 6 الفاظ۔ چارٹ، تصاویر اور آئیکنز استعمال کریں۔',tags:['اہم']},
+      {t:'پراعتماد جسمانی زبان',d:'سیدھے کھڑے ہوں، ادھر ادھر چلیں، قدرتی ہاتھ کے اشارے استعمال کریں۔',tags:['پرو ٹپ']},
+    ]
+  },
+  tricks:{
+    en:[
+      {t:'Read ALL Options First',d:'Never choose the first "correct-looking" option. Read all 4 options before selecting. The best answer might be the last one.',tags:['IMPORTANT']},
+      {t:'Eliminate Wrong Answers',d:'In MCQs, eliminate obviously wrong options first. This increases your probability from 25% to 33% or 50%.',tags:['TECHNIQUE']},
+      {t:'Longest Option is Often Correct',d:'In many exams, the longest, most detailed option tends to be correct as it needs more precision to be accurate.',tags:['TRICK']},
+      {t:'"All of the Above" Strategy',d:'If two options are correct, "All of the Above" is likely the right answer.',tags:['TRICK']},
+      {t:'Absolute Words Beware',d:'Options with "always", "never", "all", "none" are often WRONG. Options with "usually", "often", "sometimes" are more likely correct.',tags:['IMPORTANT']},
+      {t:'Time Management — 60 Second Rule',d:'Spend maximum 60 seconds per question. If unsure, mark your best guess and move on. Return if time allows.',tags:['IMPORTANT']},
+      {t:'Trust Your First Instinct',d:'Research shows your first answer is correct 57% of the time. Only change if you find a clear factual reason.',tags:['PSYCHOLOGY']},
+      {t:'Look for Clues in Other Questions',d:'Sometimes other questions in the paper give hints for difficult questions. Read the full paper first if allowed.',tags:['TECHNIQUE']},
+      {t:'Grammar Clues in English',d:'In English questions, the option that grammatically matches the question stem is often correct. Subject-verb agreement matters.',tags:['TRICK']},
+      {t:'Negative Questions — Double Read',d:'For "which is NOT..." questions, underline "NOT" before reading options. Easy to miss and choose the wrong answer.',tags:['IMPORTANT']},
+      {t:'Mark and Return Strategy',d:'Develop a marking system: ✓ = sure, ? = unsure, ✗ = skip. This helps you manage time and review efficiently.',tags:['TECHNIQUE']},
+      {t:'Practice Under Timed Conditions',d:'Train yourself to work under exam pressure. Use this platform\'s timer feature regularly.',tags:['TIP']},
+      {t:'Night Before — Rest, Don\'t Cram',d:'Sleep 7-8 hours before the exam. A rested brain performs 40% better than a tired one. Light review only.',tags:['IMPORTANT']},
+      {t:'Morning of Exam — Light Breakfast',d:'Eat a light, nutritious breakfast. Avoid heavy food. Your brain needs glucose to function optimally.',tags:['TIP']},
+    ],
+    ur:[
+      {t:'پہلے تمام آپشنز پڑھیں',d:'پہلا "درست نظر آنے والا" آپشن نہ چنیں۔ منتخب کرنے سے پہلے چاروں آپشنز پڑھیں۔',tags:['اہم']},
+      {t:'غلط جوابات نکالیں',d:'پہلے واضح طور پر غلط آپشنز نکالیں۔ اس سے امکان 25% سے 33% یا 50% بڑھ جاتا ہے۔',tags:['تکنیک']},
+      {t:'سب سے لمبا آپشن اکثر صحیح ہوتا ہے',d:'بہت سے امتحانات میں، سب سے لمبا، تفصیلی آپشن صحیح ہوتا ہے۔',tags:['چال']},
+      {t:'"All of the Above" حکمت عملی',d:'اگر دو آپشنز صحیح لگیں تو "All of the Above" امکاناً صحیح جواب ہے۔',tags:['چال']},
+      {t:'مطلق الفاظ سے ہوشیار رہیں',d:'"ہمیشہ"، "کبھی نہیں"، "سب" والے آپشنز اکثر غلط ہوتے ہیں۔',tags:['اہم']},
+      {t:'وقت کا انتظام — 60 سیکنڈ کا اصول',d:'ہر سوال پر زیادہ سے زیادہ 60 سیکنڈ۔ غیر یقینی ہو تو بہترین اندازہ لگائیں اور آگے بڑھیں۔',tags:['اہم']},
+      {t:'پہلی جبلت پر اعتماد',d:'تحقیق سے ثابت ہے کہ آپ کا پہلا جواب 57% وقت صحیح ہوتا ہے۔',tags:['نفسیات']},
+    ]
+  }
+};
+
+// TYPING TEXTS
+var TT={
+  general:{easy:['the quick brown fox jumps over the lazy dog','work hard every day and success will follow you'],medium:['success is not final and failure is not fatal only the courage to continue truly counts in life'],hard:['the fundamental purpose of education is not merely to impart information but to develop intellectual capacity for critical thinking']},
+  pakistan:{easy:['quaid e azam was the founder of pakistan'],medium:['the pakistan resolution was passed on 23 march 1940 in lahore demanding a separate homeland for muslims'],hard:['the two nation theory championed by quaid e azam became the ideological and constitutional foundation of pakistan']},
+  science:{easy:['water boils at 100 degrees celsius'],medium:['photosynthesis is how plants use sunlight water and carbon dioxide to produce glucose and oxygen'],hard:['deoxyribonucleic acid known as dna is a double helix molecule that carries genetic instructions for all living organisms']},
+  tech:{easy:['a computer processes data electronically'],medium:['artificial intelligence simulates human intelligence processes including learning reasoning and self correction'],hard:['machine learning enables computer systems to automatically learn and improve from experience without being explicitly programmed']},
+  islam:{easy:['the quran is the holy book of islam'],medium:['the five pillars are shahada salah zakat sawm and hajj which form the foundation of muslim life'],hard:['the prophet muhammad peace be upon him said seek knowledge from the cradle to the grave showing learning is lifelong']}
+};
+
+// ══════════════════════
+// LANGUAGE SYSTEM
+// ══════════════════════
+var lang='en';
+function setLang(l,btn){
+  lang=l;
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  applyLang();
+}
+function applyLang(){
+  document.querySelectorAll('[data-'+lang+']').forEach(function(el){
+    var txt=el.getAttribute('data-'+lang);
+    if(txt){
+      if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=txt}
+      else{el.innerHTML=txt}
+    }
+  });
+  if(lang==='ur'){
+    document.body.style.direction='rtl';
+    document.querySelectorAll('.sec-title,.tip-section-title,.lb-h-t,.hero-badge').forEach(function(el){el.style.direction='rtl'});
+  } else {
+    document.body.style.direction='ltr';
+  }
+  renderTips();
+}
+
+// ══════════════════════
+// STATE
+// ══════════════════════
+var selEx='General',selSubjs=[],qList=[],answers=[],curQ=0;
+var tSec=45,totSec=45,tInt=null,score=0,correct=0,startMs=0,elapsed=0;
+var lbData=[];
+var typDiff='easy',typCat='general',typTxt='',typPos=0,typErr=0,typOk=0;
+var typTimer=null,typTime=60,typMax=60,typStarted=false,wpmHist=[];
+var ppList=[],ppFT='image',isDark=true;
+
+// ══════════════════════
+// NAV
+// ══════════════════════
+function goPage(n,el){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active')});
+  document.getElementById('page-'+n).classList.add('active');
+  document.querySelectorAll('.ni').forEach(function(i){i.classList.remove('active')});
+  if(el)el.classList.add('active');
+  var t={home:'◈ TEST PLATFORM',quiz:'◈ ACTIVE TEST',result:'◈ RESULTS',leaderboard:'◈ LEADERBOARD',tips:'◈ CAREER TIPS',typing:'◈ TYPING MASTER',pastpapers:'◈ PAST PAPERS'};
+  document.getElementById('tb-title').textContent=t[n]||'◈ ILMAURHUNAR';
+  if(n==='leaderboard')renderLB();
+  if(n==='typing')newTypeText();
+  if(n==='pastpapers')renderPP('all');
+  if(n==='tips')renderTips();
+  closeSB();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleSB(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('sb-ov').classList.toggle('open')}
+function closeSB(){document.getElementById('sidebar').classList.remove('open');document.getElementById('sb-ov').classList.remove('open')}
+
+// ══════════════════════
+// THEME
+// ══════════════════════
+function toggleTheme(){
+  isDark=!isDark;
+  document.body.classList.toggle('light',!isDark);
+  document.getElementById('tt-sw').classList.toggle('on',!isDark);
+  document.getElementById('tt-ic').textContent=isDark?'🌙':'☀️';
+  document.getElementById('tt-txt').textContent=isDark?'DARK MODE':'LIGHT MODE';
+}
+
+// ══════════════════════
+// TIPS RENDER
+// ══════════════════════
+function renderTips(){
+  var sections=[
+    {id:'tips-interview-list',key:'interview'},
+    {id:'tips-impress-list',key:'impress'},
+    {id:'tips-pres-list',key:'presentation'},
+    {id:'tips-tricks-list',key:'tricks'}
+  ];
+  sections.forEach(function(sec){
+    var el=document.getElementById(sec.id);if(!el)return;
+    var data=TIPS[sec.key][lang]||TIPS[sec.key]['en'];
+    el.innerHTML=data.map(function(tip,i){
+      var tags=tip.tags.map(function(tag){
+        var cls=tag==='IMPORTANT'||tag==='اہم'?'tag-imp':tag==='PRO TIP'||tag==='پرو ٹپ'||tag==='PSYCHOLOGY'||tag==='نفسیات'?'tag-pro':'tag-tip';
+        return '<span class="tip-tag '+cls+'">'+tag+'</span>';
+      }).join('');
+      return '<div class="tip-item"><div class="tip-num">'+(i+1)+'</div><div><div style="font-weight:600;font-size:13px;color:var(--t1);margin-bottom:4px">'+tip.t+'</div><div class="tip-text">'+tip.d+'</div>'+tags+'</div></div>';
+    }).join('');
+  });
+}
+
+// ══════════════════════
+// EXAM/SUBJECT
+// ══════════════════════
+function selExam(el,n){document.querySelectorAll('.ec').forEach(function(c){c.classList.remove('sel')});el.classList.add('sel');selEx=n}
+function togSubj(el,n){el.classList.toggle('sel');var i=selSubjs.indexOf(n);if(i===-1)selSubjs.push(n);else selSubjs.splice(i,1)}
+function qExam(n){selEx=n;startQuiz()}
+
+// ══════════════════════
+// QUIZ
+// ══════════════════════
+function startQuiz(){
+  var pool=selSubjs.length?DB.filter(function(q){return selSubjs.indexOf(q.s)!==-1}):DB;
+  if(pool.length<5)pool=DB;
+  pool=shuffle(pool.slice());
+  var cnt=parseInt(document.getElementById('qc').value)||20;
+  qList=pool.slice(0,Math.min(cnt,pool.length));
+  answers=new Array(qList.length).fill(null);
+  curQ=0;score=0;correct=0;
+  tSec=parseInt(document.getElementById('tpq').value)||45;
+  totSec=tSec;startMs=Date.now();
+  goPage('quiz',null);
+  document.getElementById('qt-ex').textContent=selEx;
+  buildDots();renderQ();
+}
+function buildDots(){
+  var g=document.getElementById('qp-dots');g.innerHTML='';
+  qList.forEach(function(_,i){var d=document.createElement('div');d.className='qpd'+(i===0?' cur':'');d.id='qpd'+i;d.textContent=i+1;d.onclick=function(){jumpQ(i)};g.appendChild(d)});
+}
+function jumpQ(i){curQ=i;renderQ()}
+function renderQ(){
+  if(curQ>=qList.length){endQuiz();return}
+  var q=qList[curQ];var tot=qList.length;
+  document.getElementById('qt-qn').textContent=(curQ+1)+'/'+tot;
+  document.getElementById('qt-sc').textContent=score;
+  document.getElementById('qt-cor').textContent=correct;
+  document.getElementById('qprog').style.width=(curQ/tot*100)+'%';
+  document.getElementById('q-nb').textContent='Q '+(curQ+1);
+  document.getElementById('q-sb').textContent=q.s;
+  document.getElementById('q-txt').textContent=q.q;
+  document.getElementById('expl').className='expl';
+  document.getElementById('next-btn').style.display='none';
+  document.querySelectorAll('.qpd').forEach(function(d,i){d.classList.toggle('cur',i===curQ)});
+  var L=['A','B','C','D'];
+  var g=document.getElementById('opts');g.innerHTML='';
+  q.o.forEach(function(o,oi){var b=document.createElement('button');b.className='opt';b.innerHTML='<span class="opt-l">'+L[oi]+'</span>'+o;b.onclick=function(){pickA(oi)};g.appendChild(b)});
+  if(tSec>0)startTimer();else document.getElementById('t-val').textContent='∞';
+}
+function pickA(oi){
+  clearInterval(tInt);var q=qList[curQ];answers[curQ]=oi;
+  var isC=(oi===q.a);if(isC){score+=10;correct++}
+  document.getElementById('qt-sc').textContent=score;document.getElementById('qt-cor').textContent=correct;
+  document.querySelectorAll('.opt').forEach(function(b){b.disabled=true});
+  document.querySelectorAll('.opt')[q.a].classList.add('correct');
+  if(!isC)document.querySelectorAll('.opt')[oi].classList.add('wrong');
+  document.getElementById('expl-txt').textContent=q.e||'';
+  document.getElementById('expl').className='expl show';
+  document.getElementById('next-btn').style.display='';
+  var d=document.getElementById('qpd'+curQ);if(d){d.classList.remove('cur');d.classList.add(isC?'ac':'aw')}
+}
+function skipQ(){clearInterval(tInt);answers[curQ]=-1;var d=document.getElementById('qpd'+curQ);if(d){d.classList.remove('cur');d.classList.add('sk')}nextQ()}
+function nextQ(){curQ++;if(curQ>=qList.length)endQuiz();else renderQ()}
+function startTimer(){
+  clearInterval(tInt);var t=tSec;
+  var fill=document.getElementById('t-rfill');var val=document.getElementById('t-val');
+  fill.style.stroke='var(--green)';
+  function tick(){val.textContent=t;var off=157-(157*(totSec-t)/totSec);fill.style.strokeDashoffset=off;if(t<=10)fill.style.stroke='var(--red)';else if(t<=20)fill.style.stroke='var(--gold)';if(t<=0){clearInterval(tInt);skipQ()}t--}
+  tick();tInt=setInterval(tick,1000);
+}
+function endQuiz(){
+  clearInterval(tInt);elapsed=Math.round((Date.now()-startMs)/1000);
+  var cor=0,wr=0,sk=0;
+  answers.forEach(function(a,i){if(a===null||a===-1)sk++;else if(a===qList[i].a)cor++;else wr++});
+  var pct=Math.round(cor/qList.length*100);
+  saveLB(pct,cor,elapsed);showRes(cor,wr,sk,pct);
+}
+function showRes(cor,wr,sk,pct){
+  goPage('result',null);
+  document.getElementById('rr-pct').textContent=pct+'%';
+  var fill=document.getElementById('rr-fill');
+  fill.style.stroke=pct>=80?'var(--green)':pct>=50?'var(--gold)':'var(--red)';
+  setTimeout(function(){fill.style.strokeDashoffset=408-(408*pct/100)},150);
+  document.getElementById('rc-cor').textContent=cor;document.getElementById('rc-wr').textContent=wr;
+  document.getElementById('rc-sk').textContent=sk;document.getElementById('rc-tm').textContent=elapsed+'s';
+  var g,m;
+  if(pct>=90){g='OUTSTANDING! 🏆';m=lang==='ur'?'کمال! آپ امتحان کے لیے بالکل تیار ہیں!':'Kamaal! You are fully ready for the exam!'}
+  else if(pct>=80){g='EXCELLENT! ⭐';m=lang==='ur'?'بہت اچھا! تھوڑی اور مشق اور آپ سرفہرست ہوں گے!':'Bohot acha! Thodi aur practice aur aap top karenge!'}
+  else if(pct>=70){g='VERY GOOD! 👍';m=lang==='ur'?'اچھی کارکردگی! کمزور موضوعات پر توجہ دیں۔':'Good performance! Focus on weak topics.'}
+  else if(pct>=50){g='GOOD! 📚';m=lang==='ur'?'ٹھیک ہے۔ محنت جاری رکھیں!':'Keep working hard!'}
+  else{g='KEEP TRYING! 🔥';m=lang==='ur'?'ابھی اور مشق کی ضرورت ہے۔ تم کر سکتے ہو!':'More practice needed. You can do it!'}
+  document.getElementById('res-grade').textContent=g;document.getElementById('res-msg').textContent=m;
+  var rl=document.getElementById('rev-list');rl.innerHTML='';
+  document.getElementById('rev-cnt').textContent=qList.length+' Q';
+  qList.forEach(function(q,i){
+    var a=answers[i];var st=a===null||a===-1?'s':a===q.a?'c':'w';
+    var ic=st==='c'?'✓':st==='w'?'✗':'—';var cls=st==='c'?'ric':st==='w'?'riw':'ris';
+    var at=st==='s'?'Skipped':'Your: '+q.o[a]+' | Correct: <span class="ca">'+q.o[q.a]+'</span>';
+    rl.innerHTML+='<div class="rev-item"><div class="ri-ic '+cls+'">'+ic+'</div><div><div class="ri-q">'+(i+1)+'. '+q.q+'</div><div class="ri-a">'+at+'</div></div></div>';
+  });
+  var s=parseInt(localStorage.getItem('ih_s')||'0')+1;localStorage.setItem('ih_s',s);
+  document.getElementById('s-num').textContent=s+'🔥';
+  showNotif('◈ TEST COMPLETE',pct+'% — '+cor+'/'+qList.length);
+}
+function restartQ(){curQ=0;score=0;correct=0;answers=new Array(qList.length).fill(null);startMs=Date.now();goPage('quiz',null);buildDots();renderQ()}
+
+// ══════════════════════
+// LEADERBOARD
+// ══════════════════════
+function saveLB(pct,cor,t){
+  if(!lbData.length){
+    ['Ali Khan','Sara Ahmed','Hamza Raza','Fatima Noor','Usman Malik','Ayesha Bibi','Bilal Hassan','Zara Sheikh','Omar Farooq','Hina Baig'].forEach(function(n){lbData.push({n:n,ex:selEx||'General',pts:Math.floor(58+Math.random()*40)*10,pct:Math.floor(55+Math.random()*40),t:Math.floor(90+Math.random()*260)})});
+  }
+  lbData.push({n:'YOU ⭐',ex:selEx||'General',pts:cor*10,pct:pct,t:t,me:true});
+  lbData.sort(function(a,b){return b.pct-a.pct||a.t-b.t});
+  var tc=parseInt(localStorage.getItem('ih_tc')||'0')+1;localStorage.setItem('ih_tc',tc);
+  document.getElementById('my-tc').textContent=tc;document.getElementById('my-best').textContent=pct+'%';
+  document.getElementById('my-str').textContent=(parseInt(localStorage.getItem('ih_s')||'0'))+' days';
+}
+function renderLB(){
+  var body=document.getElementById('lb-body');var top3el=document.getElementById('top3');
+  if(!lbData.length){body.innerHTML='<div class="lb-empty">◈ NO DATA — TAKE A TEST FIRST</div>';top3el.innerHTML='';return}
+  var rc=['gr','sr','br'];var rm=['🥇','🥈','🥉'];
+  body.innerHTML=lbData.slice(0,10).map(function(r,i){
+    var rc2=(i<3?rc[i]:'')+(r.me?' mer':'');var rn=i===0?'🥇':i===1?'🥈':i===2?'🥉':(i+1);
+    var rnc=i===0?'r1':i===1?'r2':i===2?'r3':'';
+    return '<div class="lb-row '+rc2+'"><div class="lb-rk '+rnc+'">'+rn+'</div><div class="lb-nm"><div class="lb-n">'+r.n+'</div><div class="lb-sub">'+r.ex+'</div><div class="lb-bar"><div class="lb-bar-f" style="width:'+r.pct+'%"></div></div></div><div class="lb-pts">'+r.pts+'</div><div class="lb-pct">'+r.pct+'%</div><div class="lb-tm">'+r.t+'s</div></div>';
+  }).join('');
+  top3el.innerHTML=lbData.slice(0,3).map(function(r,i){return '<div class="t3-item"><div class="t3-med">'+rm[i]+'</div><div><div class="t3-n">'+r.n+'</div><div class="t3-s">'+r.ex+'</div></div><div class="t3-pct">'+r.pct+'%</div></div>'}).join('');
+  document.getElementById('my-str').textContent=(parseInt(localStorage.getItem('ih_s')||'0'))+' days';
+  document.getElementById('my-tc').textContent=localStorage.getItem('ih_tc')||'0';
+}
+function filterLB(btn,p){document.querySelectorAll('.lb-fb').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');renderLB()}
+
+// ══════════════════════
+// TYPING
+// ══════════════════════
+function newTypeText(){var pool=TT[typCat][typDiff];typTxt=pool[Math.floor(Math.random()*pool.length)];renderTypeTxt();updateTypeProg()}
+function renderTypeTxt(){var d=document.getElementById('type-box');d.innerHTML=typTxt.split('').map(function(c,i){return'<span class="tc '+(i===0?'tc-cur':'tc-wait')+'" id="tch'+i+'">'+c+'</span>'}).join('')}
+function setTT(btn,t){document.querySelectorAll('.ts-pill').forEach(function(b){if(b.onclick&&b.onclick.toString().includes('setTT'))b.classList.remove('at')});btn.classList.add('at');typMax=t;typTime=t;resetType()}
+function setD2(btn,d){document.querySelectorAll('.ts-pill').forEach(function(b){if(b.onclick&&b.onclick.toString().includes('setD2'))b.classList.remove('at')});btn.classList.add('at');typDiff=d;newTypeText()}
+function setCat(btn,c){document.querySelectorAll('.cat-pill').forEach(function(b){b.classList.remove('ac2')});btn.classList.add('ac2');typCat=c;newTypeText()}
+function startType(){var inp=document.getElementById('type-input');inp.disabled=false;inp.value='';inp.focus();typPos=0;typErr=0;typOk=0;typStarted=false;typTime=typMax;wpmHist=[];renderTypeTxt();document.getElementById('t-start').textContent='↺ RESTART';document.getElementById('t-time').textContent=typMax;document.getElementById('t-wpm').textContent='0';document.getElementById('t-acc').textContent='100%';document.getElementById('t-err').textContent='0';document.getElementById('type-result').className='type-result-popup';document.getElementById('type-box').classList.remove('active');updateTypeProg()}
+function resetType(){clearInterval(typTimer);typStarted=false;typPos=0;typErr=0;typOk=0;var inp=document.getElementById('type-input');inp.disabled=true;inp.value='';document.getElementById('t-start').textContent='▶ START';document.getElementById('t-time').textContent=typMax;document.getElementById('t-wpm').textContent='0';document.getElementById('t-acc').textContent='100%';document.getElementById('t-err').textContent='0';document.getElementById('type-result').className='type-result-popup';document.getElementById('type-box').classList.remove('active');renderTypeTxt();updateTypeProg()}
+function handleType(){
+  var inp=document.getElementById('type-input');var c=inp.value[inp.value.length-1];if(!c)return;
+  if(!typStarted){
+    typStarted=true;document.getElementById('type-box').classList.add('active');
+    typTimer=setInterval(function(){
+      typTime--;document.getElementById('t-time').textContent=typTime;
+      var el=typMax-typTime;if(el>0){var wpm=Math.round((typOk/5)/(el/60));document.getElementById('t-wpm').textContent=wpm;wpmHist.push(wpm);if(wpmHist.length>40)wpmHist.shift();renderWC()}
+      if(typTime<=0){clearInterval(typTimer);inp.disabled=true;showTypeRes()}
+    },1000);
+  }
+  if(typPos>=typTxt.length){inp.value='';return}
+  var exp=typTxt[typPos];var sp=document.getElementById('tch'+typPos);
+  if(sp)sp.className='tc '+(c===exp?'tc-ok':'tc-bad');
+  if(c===exp)typOk++;else typErr++;
+  typPos++;
+  var nxt=document.getElementById('tch'+typPos);if(nxt)nxt.className='tc tc-cur';
+  inp.value='';
+  var tot=typOk+typErr;document.getElementById('t-acc').textContent=tot?Math.round(typOk/tot*100)+'%':'100%';
+  document.getElementById('t-err').textContent=typErr;updateTypeProg();
+  if(typPos>=typTxt.length){clearInterval(typTimer);inp.disabled=true;showTypeRes()}
+}
+function updateTypeProg(){var p=typTxt.length?Math.round(typPos/typTxt.length*100):0;document.getElementById('tpf').style.width=p+'%';document.getElementById('tpl').textContent=typPos+' / '+typTxt.length+' characters ('+p+'%)'}
+function showTypeRes(){var el=typMax-typTime;var wpm=el>0?Math.round((typOk/5)/(el/60)):0;var tot=typOk+typErr;var acc=tot?Math.round(typOk/tot*100):100;var r=document.getElementById('type-result');r.innerHTML='<div class="trp-wpm">'+wpm+'</div><div class="trp-lbl">WORDS PER MINUTE</div><div class="trp-stats"><div class="trp-s"><div class="trp-s-n" style="color:var(--green)">'+acc+'%</div><div class="trp-s-l">ACCURACY</div></div><div class="trp-s"><div class="trp-s-n" style="color:var(--red)">'+typErr+'</div><div class="trp-s-l">ERRORS</div></div><div class="trp-s"><div class="trp-s-n" style="color:var(--gold)">'+el+'s</div><div class="trp-s-l">TIME</div></div></div>';r.className='type-result-popup show';showNotif('◈ TYPING COMPLETE',wpm+' WPM — '+acc+'% accuracy')}
+function renderWC(){if(!wpmHist.length)return;var bars=document.getElementById('wpm-bars');var mx=Math.max.apply(null,wpmHist)||1;bars.innerHTML=wpmHist.map(function(w){var h=Math.round((w/mx)*62)+4;var op=0.3+0.7*(w/mx);return'<div class="wpm-b" style="height:'+h+'px;opacity:'+op.toFixed(2)+'" title="'+w+' WPM"></div>'}).join('')}
+
+// ══════════════════════
+// PAST PAPERS
+// ══════════════════════
+function filterPP(btn,f){document.querySelectorAll('.pp-fb').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');renderPP(f)}
+function showPPFT(t){ppFT=t;var f=document.getElementById('pp-form');f.classList.add('show');var titles={image:'📸 IMAGE UPLOAD',text:'✍️ TEXT INPUT',link:'🔗 LINK ADD'};document.getElementById('pp-ft').textContent=titles[t];var a=document.getElementById('pp-ia');if(t==='image')a.innerHTML='<input type="file" id="pp-file" accept="image/*" style="padding:8px;width:100%;cursor:pointer;background:var(--s2);border:1px solid var(--b1);border-radius:8px;color:var(--t1)" onchange="previewPP(this)"><div id="pp-pv" style="margin-top:8px;display:none"><img id="pp-pvi" style="max-height:150px;border-radius:8px;border:1px solid var(--b1)"></div>';else if(t==='text')a.innerHTML='<textarea style="background:var(--s2);border:1px solid var(--b1);border-radius:8px;padding:9px 12px;color:var(--t1);font-family:Exo 2,sans-serif;font-size:13px;outline:none;width:100%;resize:vertical;min-height:100px" id="pp-tc" placeholder="Paste paper text here..."></textarea>';else a.innerHTML='<input type="text" id="pp-lc" placeholder="Paste URL here..." style="background:var(--s2);border:1px solid var(--b1);border-radius:8px;padding:9px 12px;color:var(--t1);font-family:Exo 2,sans-serif;font-size:13px;outline:none;width:100%">';f.scrollIntoView({behavior:'smooth',block:'nearest'})}
+function showPPF(){showPPFT('image')}
+function previewPP(inp){if(inp.files&&inp.files[0]){var r=new FileReader();r.onload=function(e){var p=document.getElementById('pp-pv');var i=document.getElementById('pp-pvi');if(p&&i){i.src=e.target.result;p.style.display='block'}};r.readAsDataURL(inp.files[0])}}
+function handleDrop(e){e.preventDefault();document.getElementById('pp-ul').classList.remove('dov');var f=e.dataTransfer.files[0];if(f&&f.type.startsWith('image/')){showPPFT('image');setTimeout(function(){var fi=document.getElementById('pp-file');if(fi){var dt=new DataTransfer();dt.items.add(f);fi.files=dt.files;previewPP(fi)}},300)}}
+function savePP(){var tt=document.getElementById('pp-title').value.trim();var ex=document.getElementById('pp-exam').value;var yr=document.getElementById('pp-year').value;if(!tt){showNotif('◈ ERROR','Title required!');return}if(!ex){showNotif('◈ ERROR','Select exam!');return}var pp={id:Date.now(),title:tt,exam:ex,year:yr||'N/A',type:ppFT,content:'',date:new Date().toLocaleDateString()};if(ppFT==='image'){var fi=document.getElementById('pp-file');if(fi&&fi.files&&fi.files[0]){var re=new FileReader();re.onload=function(e){pp.content=e.target.result;ppList.push(pp);finishSavePP()};re.readAsDataURL(fi.files[0]);return}}else if(ppFT==='text'){var tc=document.getElementById('pp-tc');pp.content=tc?tc.value:''}else{var lc=document.getElementById('pp-lc');pp.content=lc?lc.value:''}ppList.push(pp);finishSavePP()}
+function finishSavePP(){document.getElementById('pp-form').classList.remove('show');document.getElementById('pp-title').value='';document.getElementById('pp-exam').value='';document.getElementById('pp-year').value='';renderPP('all');updatePPStats();showNotif('◈ SAVED','Past paper uploaded!')}
+function renderPP(filter){var list=filter==='all'?ppList:ppList.filter(function(p){return p.exam===filter});var g=document.getElementById('pp-grid');if(!list.length){g.innerHTML='<div class="pp-empty">'+( filter==='all'?'📭 No papers yet. Upload above!':'📭 No '+filter+' papers yet.')+'</div>';return}g.innerHTML=list.map(function(p){var th=p.type==='image'&&p.content?'<img src="'+p.content+'" style="width:100%;height:100%;object-fit:cover">':'<span style="font-size:2.5rem">'+(p.type==='text'?'📝':'🔗')+'</span>';return'<div class="pp-card" onclick="viewPP('+p.id+')">'+'<div class="pp-thumb">'+th+'</div>'+'<div class="pp-body"><div class="pp-title">'+p.title+'</div><div class="pp-sub">'+p.date+'</div><div class="pp-tags"><span class="pp-tag">'+p.exam+'</span><span class="pp-tag">'+p.year+'</span></div><div class="pp-acts"><button class="pp-act" onclick="event.stopPropagation();viewPP('+p.id+')">👁 VIEW</button><button class="pp-act" onclick="event.stopPropagation();delPP('+p.id+')">🗑 DEL</button></div></div></div>'}).join('')}
+function viewPP(id){var p=ppList.find(function(x){return x.id===id});if(!p)return;document.getElementById('modal-title').textContent=p.title+' — '+p.exam+' '+p.year;var b=document.getElementById('modal-body');if(p.type==='image'&&p.content)b.innerHTML='<img src="'+p.content+'" style="width:100%;border-radius:8px">';else if(p.type==='text')b.innerHTML='<div class="modal-txt">'+p.content+'</div>';else b.innerHTML='<a href="'+p.content+'" target="_blank" style="color:var(--cyan);font-family:Share Tech Mono,monospace">'+p.content+'</a>';document.getElementById('modal-ov').classList.add('show')}
+function delPP(id){ppList=ppList.filter(function(p){return p.id!==id});renderPP('all');updatePPStats();showNotif('◈ DELETED','Paper removed.')}
+function updatePPStats(){document.getElementById('pp-tot').textContent=ppList.length;['fpsc','nts','ppsc','etea'].forEach(function(e){var el=document.getElementById('pp-'+e);if(el)el.textContent=ppList.filter(function(p){return p.exam===e.toUpperCase()}).length})}
+function closeModal(e){if(!e||e.target===document.getElementById('modal-ov'))document.getElementById('modal-ov').classList.remove('show')}
+
+// ══════════════════════
+// NOTIFICATION
+// ══════════════════════
+function showNotif(title,sub){var old=document.querySelector('.notif');if(old)old.remove();var n=document.createElement('div');n.className='notif';n.innerHTML='<div><div class="notif-txt">'+title+'</div><div class="notif-sub">'+sub+'</div></div><button class="notif-close" onclick="this.parentElement.remove()">×</button>';document.body.appendChild(n);setTimeout(function(){if(n.parentElement)n.remove()},4000)}
+
+// ══════════════════════
+// HEX PARTICLES
+// ══════════════════════
+function spawnHex(){var hp=document.getElementById('hex-particles');if(!hp)return;var h=document.createElement('div');h.className='hex';h.textContent='⬡';h.style.left=Math.random()*100+'%';h.style.top=Math.random()*100+'%';h.style.animationDuration=(4+Math.random()*4)+'s';h.style.animationDelay=Math.random()*2+'s';hp.appendChild(h);setTimeout(function(){if(h.parentElement)h.remove()},8000)}
+setInterval(spawnHex,800);
+
+// ══════════════════════
+// UTILS
+// ══════════════════════
+function shuffle(arr){for(var i=arr.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=arr[i];arr[i]=arr[j];arr[j]=t}return arr}
+
+// INIT
+var savedS=parseInt(localStorage.getItem('ih_s')||'0');
+document.getElementById('s-num').textContent=savedS+'🔥';
+document.getElementById('my-tc').textContent=localStorage.getItem('ih_tc')||'0';
+document.getElementById('my-str').textContent=savedS+' days';
+newTypeText();renderLB();renderTips();
+</script>
+</body>
+</html>
